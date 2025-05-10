@@ -1,0 +1,38 @@
+/********************************/
+/* GENERAL USABLE COMPONENTS */
+/********************************/
+.container {
+    background-color: greenyellow;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+}
+.grid__2-columns {
+    grid-template-columns: 1fr 1fr;
+}
+
+.heading-primary {
+    color: var(--primary-color);
+    font-size: 6.4rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.button:link,
+.button:visited {
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 1.5rem 3rem;
+    border-radius: 10px;
+    transition: all .3s;
+}
+.button:hover,
+.button:active {
+    background-color: #24442f;
+}
