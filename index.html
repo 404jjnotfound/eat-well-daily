@@ -5,6 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/general.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">        
         <title>Finals Website</title>
     </head>
     <body>
@@ -39,7 +42,142 @@
 
             </section>
 
+            <!--======================================= FEATURED IN =======================================-->
+            <section class="featured">
+                <div class="container">
+                    <h2 class="featured__heading">Featured in</h2>
+
+                    <div class="logos">
+                        <img src="images/logos/business-insider-logo.png" alt="Business Insider logo."/>
+                        <img src="images/logos/epicurious-logo.png" alt="Epicurious logo."/>
+                        <img src="images/logos/healthline-logo.png" alt="Healthline logo."/>
+                        <img src="images/logos/kitchn-logo.png" alt="Kitchnn logo."/>
+                    </div>
+                </div>
+            </section>
+
+            <!--======================================= HOW IT WORKS =======================================-->
+            <section class="how">
+                <div class="center-text">
+                    <h2 class="heading-secondary">How it works</h2>
+                </div>
+
+                <div class="container grid grid__2-columns">
+                    <!-- STEP 1 -->
+                    <div class="step-container">
+                        <p class="step-number">01</p>
+                        <h3 class="heading-tertiary">Order your meals</h3>
+                        <p class="step-description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Velit mollitia praesentium est aut natus quibusdam, tenetur 
+                            placeat accusantium explicabo nihil numquam voluptatem ab iste expedita!
+                            Accusamus, aut enim. Eaque, earum!
+                        </p>
+                    </div>
+                    <div class="step-image-container">
+                        &nbsp;
+                    </div>
+
+                    <!-- STEP 2 -->
+                    <div class="step-image-container">
+                        &nbsp;
+                    </div>
+                    <div class="step-container">
+                        <p class="step-number">02</p>
+                        <h3 class="heading-tertiary">Delivered right next to your doorstep</h3>
+                        <p class="step-description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Velit mollitia praesentium est aut natus quibusdam, tenetur 
+                            placeat accusantium explicabo nihil numquam voluptatem ab iste expedita!
+                            Accusamus, aut enim. Eaque, earum!
+                        </p>
+                    </div>
+
+                    <!-- STEP 3 -->
+                    <div class="step-container">
+                        <p class="step-number">03</p>
+                        <h3 class="heading-tertiary">Eat and enjoy</h3>
+                        <p class="step-description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Velit mollitia praesentium est aut natus quibusdam, tenetur 
+                            placeat accusantium explicabo nihil numquam voluptatem ab iste expedita!
+                            Accusamus, aut enim. Eaque, earum!
+                        </p>
+                    </div>
+                    <div class="step-image-container">
+                        &nbsp;
+                    </div>
+                </div>
+
+            </section>
+
+            <!--======================================= MEALS =======================================-->
+            <section class="meals">
+                <div class="container">
+                    <h2 class="heading-secondary">Meals</h2>
+                </div>
+                
+                <div class="meal__container">
+                    <!-- LEFT ARROW -->
+                    <button class="button-slide button-left-arrow">
+                        <ion-icon class="button-icon" name="chevron-back-outline"></ion-icon>
+                    </button>
+
+                    <!-- MEAL 1 -->
+                    <div class="meal meal__one">
+                        <img class="meal__image" src="images/meals/puttanesca-pork-chops.png" alt="Puttanesca pork chops meal."/>
+
+                        <div class="meal__data">
+                            <p class="meal__name">Puttanesca pork chops</p>
+                        
+                            <p class="meal__description">
+                                This flavorful pork chop dinner recipe is proof that bold Neapolitan puttanesca sauce 
+                                can liven up more than...
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- MEAL 2 -->
+                    <div class="meal meal__two">
+                        <img class="meal__image" src="images/meals/white-bean-veggie-salad.png" alt="White bean & veggie salad meal."/>
+
+                        <div class="meal__data">
+                            <p class="meal__name">White bean & veggie salad</p>
+                        
+                            <p class="meal__description">
+                                This meatless main-dish salad combines creamy, satisfying white beans and avocado. 
+                                Try mixing it up with...
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- MEAL 3 -->
+                    <div class="meal meal__three">
+                        <img class="meal__image" src="images/meals/chickpea-pasta-with-mushrooms-and-kale.png" alt="Chickpea pasta with mushrooms & kale meal."/>
+
+                        <div class="meal__data">
+                            <p class="meal__name">Chickpea pasta with mushrooms & kale</p>
+                        
+                            <p class="meal__description">
+                                Loading up your pasta with vegetables like the kale and mushrooms here is not only delicious, 
+                                it also...
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT ARROW -->
+                    <button class="button-slide button-right-arrow">
+                        <ion-icon class="button-icon" name="chevron-forward-outline"></ion-icon>
+                    </button>
+
+                </div> <!-- end meal container -->
+
+            </section>  <!-- end meals section -->
+
         </main>
 
+        <!-- <script src="main.js"></script> -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     </body>
 </html>
