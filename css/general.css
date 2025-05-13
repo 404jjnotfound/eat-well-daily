@@ -62,3 +62,12 @@
 .button:active {
     background-color: #24442f;
 }
+
+.hidden {
+    display: none;
+}
+
+/* For icons (from ionicons) */
+.list__icon-paint-red {
+    color: red; /* temp */
+}

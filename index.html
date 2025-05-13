@@ -119,12 +119,12 @@
                 
                 <div class="meal__container">
                     <!-- LEFT ARROW -->
-                    <button class="button-slide button-left-arrow">
+                    <button class="button-slide button-left-arrow hidden">
                         <ion-icon class="button-icon" name="chevron-back-outline"></ion-icon>
                     </button>
-
+                            
                     <!-- MEAL 1 -->
-                    <div class="meal meal__one">
+                    <div class="meal meal__one slide">
                         <img class="meal__image" src="images/meals/puttanesca-pork-chops.png" alt="Puttanesca pork chops meal."/>
 
                         <div class="meal__data">
@@ -138,7 +138,7 @@
                     </div>
 
                     <!-- MEAL 2 -->
-                    <div class="meal meal__two">
+                    <div class="meal meal__two slide">
                         <img class="meal__image" src="images/meals/white-bean-veggie-salad.png" alt="White bean & veggie salad meal."/>
 
                         <div class="meal__data">
@@ -152,7 +152,7 @@
                     </div>
 
                     <!-- MEAL 3 -->
-                    <div class="meal meal__three">
+                    <div class="meal meal__three slide">
                         <img class="meal__image" src="images/meals/chickpea-pasta-with-mushrooms-and-kale.png" alt="Chickpea pasta with mushrooms & kale meal."/>
 
                         <div class="meal__data">
@@ -174,9 +174,90 @@
 
             </section>  <!-- end meals section -->
 
+            <!--======================================= PRICING =======================================-->
+            <section class="pricing">
+                <div class="container">
+                    <h2 class="heading-secondary">Pricing</h2>
+                </div>
+
+                <!-- TAB LINKS -->
+                <div class="tabs">
+                    <button class="tabs__monthly">Monthly</button>
+                    <button class="tabs__annual">Annual</button>
+                </div>
+
+                <div class="container grid grid__2-columns">
+                    <!-- STARTER PLAN -->
+                    <div class="pricing__plan pricing__plan-starter">
+                        <header class="plan-header">
+                            <p class="plan-name">Starter</p>
+                            <p class="plan-price"><span>$</span> 399</p>
+                            <p class="plan-text">per month. That's just $13 per meal!</p>
+                        </header>
+
+                        <ul class="list">
+                            <li class="list__item">
+                                <ion-icon class="list__icon" name="checkmark-outline"></ion-icon>
+                                <span>1 meal per day</span>
+                            </li>
+                            <li class="list__item">
+                                <ion-icon class="list__icon" name="checkmark-outline"></ion-icon>
+                                <span>Order from 8am to 8pm</span>
+                            </li>
+                            <li class="list__item">
+                                <ion-icon class="list__icon" name="checkmark-outline"></ion-icon>
+                                <span>Delivery is free</span>
+                            </li>
+                            <li class="list__item">
+                                <ion-icon class="list__icon list__icon-paint-red" name="close-outline"></ion-icon>
+                                <span>Get access to latest recipes</span>
+                            </li>
+                        </ul>
+
+                        <div class="sign-up">
+                            <a class="button" href="#">Start eating well</a>
+                        </div>
+                    </div>
+
+                    <!-- COMPLETE PLAN -->
+                    <div class="pricing__plan pricing__plan-complete">
+                        <header class="plan-header">
+                            <p class="plan-name">Complete</p>
+                            <p class="plan-price"><span>$</span> 649</p>
+                            <p class="plan-text">per month. That's just $11 per meal!</p>
+                        </header>
+
+                        <ul class="list">
+                            <li class="list__item">
+                                <ion-icon class="list__icon" name="checkmark-outline"></ion-icon>
+                                <span>2 meals per day</span>
+                            </li>
+                            <li class="list__item">
+                                <ion-icon class="list__icon" name="checkmark-outline"></ion-icon>
+                                <span>Order 24/7</span>
+                            </li>
+                            <li class="list__item">
+                                <ion-icon class="list__icon" name="checkmark-outline"></ion-icon>
+                                <span>Delivery is free</span>
+                            </li>
+                            <li class="list__item">
+                                <ion-icon class="list__icon" name="checkmark-outline"></ion-icon>
+                                <span>Get access to latest recipes</span>
+                            </li>
+                        </ul>
+
+                        <div class="sign-up">
+                            <a class="button" href="#">Start eating well</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
         </main>
 
-        <!-- <script src="main.js"></script> -->
+        <script src="main.js"></script>
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     </body>
