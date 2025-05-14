@@ -86,6 +86,7 @@ body {
 /* FEATURED IN */
 /********************************/
 .featured {
+    background-color: #eaedeb;
     padding: 4.8rem 0 9.6rem;
 }
 .featured__heading {
@@ -112,6 +113,7 @@ body {
 /* HOW IT WORKS */
 /********************************/
 .how {
+    background-color: #eaedeb; /* temp */
     padding: 0 0 9.6rem;
 }
 .step-number {
@@ -139,67 +141,79 @@ body {
 /* MEALS */
 /********************************/
 .meals {
-    padding: 0 0 9.6rem;
+    background-color: #d4dbd6; /* temp */
+    padding: 4.8rem 0 9.6rem;
 }
-.meal {
-    cursor: pointer;
-    box-shadow: 0 0 24px rgba(0,0,0,.1); /* temp */
+.card-wrapper {
+    margin: 0 6.4rem 4.8rem;
+    overflow: hidden;
 }
-.meal__container {
-    position: relative;
 
-    max-width: 96.8rem;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 3.2rem;
+/* Override arrow buttons and pagination color */
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--primary-color) !important;
+}
+.swiper-pagination-bullet {
+    background-color: var(--primary-color) !important;
+}
+
+.meal {
+    background-color: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+    /* box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, .075); */
+    list-style: none;
+    overflow: hidden;
+}
+.meal:active {
+    cursor: grabbing;
 }
 .meal__image {
     max-width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+}
+.meal__content {
+    padding: 1.2rem 3.2rem 3.2rem;
+}
+.meal__tag {
+    display: inline-block;
+    border-radius: 100px;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: .4rem .8rem;
 
-    margin-bottom: 1.2rem;
+    margin-bottom: 2.4rem;
+}
+.meal__tag-paleo {
+    background-color: #51cf66;
 }
 .meal__name {
     color: #333;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 600;
     text-transform: capitalize;
-
-    margin-bottom: 1.2rem;
-}
-.meal__description {
-    font-size: 1.6rem;
-    line-height: 1.6;
-}
-.button-slide {
-    position: absolute;
-    top: 50%;
-
-    height: 4.8rem;
-    width: 4.8rem;
-    border-radius: 50%;
-    border: none;
-    cursor: pointer;
     
+    margin-bottom: 3.2rem;
+}
+.meal__attributes {
+    list-style: none;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+.meal__attribute {
+    font-size: 1.6rem;
+    display: flex;
     align-items: center;
-    
-    box-shadow: 0 0 24px rgba(0,0,0,.3);
+    gap: 1.2rem;
 }
-.button-left-arrow {
-    left: 0;
-    transform: translate(-50%, -50%);
-}
-.button-right-arrow {
-    right: 0;
-    transform: translate(50%, -50%);
-}
-.button-icon {
-    height: 3.2rem;
-    width: 3.2rem;
-
-    /* temp */
+.meal__icon {
+    height: 2.4rem;
+    width: 2.4rem;
     color: var(--primary-color);
 }
 
@@ -207,7 +221,8 @@ body {
 /* PRICING */
 /********************************/
 .pricing {
-    padding: 0 0 9.6rem;
+    background-color: #eaedeb;
+    padding: 4.8rem 0 9.6rem;
 }
 .tabs {
     display: flex;

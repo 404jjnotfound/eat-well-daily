@@ -5,9 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/general.css">
+        <!-- Link google font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">        
+        <!-- Link swiper -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
         <title>Finals Website</title>
     </head>
     <body>
@@ -116,63 +119,170 @@
                 <div class="container">
                     <h2 class="heading-secondary">Meals</h2>
                 </div>
-                
-                <div class="meal__container">
-                    <!-- LEFT ARROW -->
-                    <button class="button-slide button-left-arrow hidden">
-                        <ion-icon class="button-icon" name="chevron-back-outline"></ion-icon>
-                    </button>
-                            
-                    <!-- MEAL 1 -->
-                    <div class="meal meal__one slide">
-                        <img class="meal__image" src="images/meals/puttanesca-pork-chops.png" alt="Puttanesca pork chops meal."/>
 
-                        <div class="meal__data">
-                            <p class="meal__name">Puttanesca pork chops</p>
-                        
-                            <p class="meal__description">
-                                This flavorful pork chop dinner recipe is proof that bold Neapolitan puttanesca sauce 
-                                can liven up more than...
-                            </p>
-                        </div>
+                <div class="container swiper">
+                    <div class="card-wrapper">
+                        <ul class="card-list swiper-wrapper">
+                            <!-- MEAL 01 -->
+                            <li class="meal swiper-slide">
+                                <div>
+                                    <img class="meal__image" src="images/meals/puttanesca-pork-chops.png" alt="Puttanesca pork chops meal."/>
+                                </div>
+    
+                                <div class="meal__content">
+                                    <p class="meal__tag meal__tag-paleo">Paleo</p>
+                                    <p class="meal__name">Puttanesca pork chops</p>
+                                    <ul class="meal__attributes">
+                                        <li class="meal__attribute">
+                                            <ion-icon class="meal__icon" name="flame-outline"></ion-icon>
+                                            <span><strong>650</strong> calories</span>
+                                        </li>
+        
+                                        <li class="meal__attribute">
+                                            <ion-icon class="meal__icon" name="restaurant-outline"></ion-icon>
+                                            <span>NutriScore &reg; <strong>74</strong></span>
+                                        </li>
+        
+                                        <li class="meal__attribute">
+                                            <ion-icon class="meal__icon" name="star-outline"></ion-icon>
+                                            <span><strong>4.9</strong> rating (537)</span>
+                                        </li>
+                                    </ul>
+                                    </div>
+                            </li>
+    
+                            <!-- MEAL 02 -->
+                            <li class="meal swiper-slide">
+                                <div>
+                                    <img class="meal__image" src="images/meals/white-bean-veggie-salad.png" alt="White bean & veggie salad meal."/>
+                                </div>
+    
+                                <div class="meal__content">
+                                    <p class="meal__tag meal__tag-paleo">Vegan</p>
+                                    <p class="meal__name">White bean & veggie salad</p>
+                                    <ul class="meal__attributes">
+                                        <li class="meal__attribute">
+                                            <ion-icon class="meal__icon" name="flame-outline"></ion-icon>
+                                            <span><strong>400</strong> calories</span>
+                                        </li>
+        
+                                        <li class="meal__attribute">
+                                            <ion-icon class="meal__icon" name="restaurant-outline"></ion-icon>
+                                            <span>NutriScore &reg; <strong>92</strong></span>
+                                        </li>
+        
+                                        <li class="meal__attribute">
+                                            <ion-icon class="meal__icon" name="star-outline"></ion-icon>
+                                            <span><strong>4.8</strong> rating (441)</span>
+                                        </li>
+        
+                                    </ul>
+                                </div>
+                            </li>
+    
+                            <!-- MEAL 03 -->
+                            <li class="meal swiper-slide">
+                                <div>
+                                    <img class="meal__image" src="images/meals/chickpea-pasta-with-mushrooms-and-kale.png" alt="Chickpea pasta with mushrooms & kale meal."/>
+                                </div>
+    
+                                <div class="meal__content">
+                                    <p class="meal__tag meal__tag-paleo">Vegetarian</p>
+                                    <p class="meal__name">Chickpea</p>
+                                    <ul class="meal__attributes">
+                                        <li class="meal__attribute">
+                                            <ion-icon class="meal__icon" name="flame-outline"></ion-icon>
+                                            <span><strong>500</strong> calories</span>
+                                        </li>
+        
+                                        <li class="meal__attribute">
+                                            <ion-icon class="meal__icon" name="restaurant-outline"></ion-icon>
+                                            <span>NutriScore &reg; <strong>89</strong></span>
+                                        </li>
+        
+                                        <li class="meal__attribute">
+                                            <ion-icon class="meal__icon" name="star-outline"></ion-icon>
+                                            <span><strong>4.7</strong> rating (339)</span>
+                                        </li>
+        
+                                    </ul>
+                                </div>
+    
+                            </li>
+    
+                            <!-- MEAL 04 -->
+                            <li class="meal swiper-slide">
+                                <div>
+                                    <img class="meal__image" src="images/meals/cheesy-ground-beef-&-cauliflower-casserole.png" alt=""/>
+                                </div>
+    
+                                <div class="meal__content">
+                                    <p class="meal__tag meal__tag-paleo">Tag</p>
+                                    <p class="meal__name">Name</p>
+                                    <ul class="meal__attributes">
+                                        <li class="meal__attribute">
+                                            <ion-icon class="meal__icon" name="flame-outline"></ion-icon>
+                                            <span><strong>0</strong> calories</span>
+                                        </li>
+        
+                                        <li class="meal__attribute">
+                                            <ion-icon class="meal__icon" name="restaurant-outline"></ion-icon>
+                                            <span>NutriScore &reg; <strong>0</strong></span>
+                                        </li>
+        
+                                        <li class="meal__attribute">
+                                            <ion-icon class="meal__icon" name="star-outline"></ion-icon>
+                                            <span><strong>0</strong> rating (0)</span>
+                                        </li>
+        
+                                    </ul>
+                                </div>
+                            </li>
+    
+                            <!-- MEAL 05 -->
+                            <li class="meal swiper-slide">
+                                <div>
+                                    <img class="meal__image" src="images/meals/creamy-white-chili-with-cream-cheese.png" alt=""/>
+                                </div>
+    
+                                <div class="meal__content">
+                                    <p class="meal__tag meal__tag-paleo">Tag</p>
+                                    <p class="meal__name">Name</p>
+                                    <ul class="meal__attributes">
+                                        <li class="meal__attribute">
+                                            <ion-icon class="meal__icon" name="flame-outline"></ion-icon>
+                                            <span><strong>0</strong> calories</span>
+                                        </li>
+        
+                                        <li class="meal__attribute">
+                                            <ion-icon class="meal__icon" name="restaurant-outline"></ion-icon>
+                                            <span>NutriScore &reg; <strong>0</strong></span>
+                                        </li>
+        
+                                        <li class="meal__attribute">
+                                            <ion-icon class="meal__icon" name="star-outline"></ion-icon>
+                                            <span><strong>0</strong> rating (0)</span>
+                                        </li>
+        
+                                    </ul>
+                                </div>
+    
+                            </li>
+    
+                        </ul>
+    
+                        <!-- PAGINATION -->
+                        <div class="swiper-pagination"></div>
+    
+                        <!-- NAVIGATION BUTTONS -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+    
                     </div>
 
-                    <!-- MEAL 2 -->
-                    <div class="meal meal__two slide">
-                        <img class="meal__image" src="images/meals/white-bean-veggie-salad.png" alt="White bean & veggie salad meal."/>
+                </div>
 
-                        <div class="meal__data">
-                            <p class="meal__name">White bean & veggie salad</p>
-                        
-                            <p class="meal__description">
-                                This meatless main-dish salad combines creamy, satisfying white beans and avocado. 
-                                Try mixing it up with...
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- MEAL 3 -->
-                    <div class="meal meal__three slide">
-                        <img class="meal__image" src="images/meals/chickpea-pasta-with-mushrooms-and-kale.png" alt="Chickpea pasta with mushrooms & kale meal."/>
-
-                        <div class="meal__data">
-                            <p class="meal__name">Chickpea pasta with mushrooms & kale</p>
-                        
-                            <p class="meal__description">
-                                Loading up your pasta with vegetables like the kale and mushrooms here is not only delicious, 
-                                it also...
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- RIGHT ARROW -->
-                    <button class="button-slide button-right-arrow">
-                        <ion-icon class="button-icon" name="chevron-forward-outline"></ion-icon>
-                    </button>
-
-                </div> <!-- end meal container -->
-
-            </section>  <!-- end meals section -->
+            </section>
 
             <!--======================================= PRICING =======================================-->
             <section class="pricing">
@@ -257,8 +367,11 @@
 
         </main>
 
-        <script src="main.js"></script>
+        <!-- Link ionicons -->
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <!-- Link swiper -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="main.js"></script>
     </body>
 </html>
