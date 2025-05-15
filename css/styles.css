@@ -1,6 +1,6 @@
 /* VARIABLES */
 :root {
-    --primary-color: #284c34;
+    --primary-color: #66bb6a;
 }
 
 /********************************/
@@ -18,7 +18,6 @@ body {
     font-family: "Rubik", sans-serif;
     font-weight: 400;
     line-height: 1;
-    color: #555;
 }
 
 
@@ -26,7 +25,8 @@ body {
 /* NAVIGATION */
 /********************************/
 .header {
-    height: 8.4rem;
+    height: 8rem;
+    background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,12 +34,8 @@ body {
 }
 
 /* Temp */
-.header a {
-    text-decoration: none;
-    color: #555;
-}
-.header .logo {
-    font-size: 2.4rem;
+.logo {
+    font-size: 2rem;
 }
 
 .nav__list {
@@ -51,128 +47,53 @@ body {
 .nav__link:link,
 .nav__link:visited {
     text-decoration: none;
-    color: #555;
+    color: #fff;
     font-weight: 600;
     transition: all .3s;
 }
 .nav__link:hover {
-    color: var(--primary-color);
+    text-decoration: underline;
 }
 
 /********************************/
-/* HOME */
+/* HERO */
 /********************************/
-.home {
-    background-image: url("../images/hero-image.jpg");
-    background-repeat: no-repeat;
-    background-position: 34% 36%;
-    padding: 20.8rem 0;
+.hero {
+    background: linear-gradient(rgba(45, 45, 45, 0.5), rgba(45, 45, 45, .5)), url("../images/hero-image.jpg") no-repeat center center/cover;
+    padding: 26.8rem 0;
 }
-.home__container {
+.hero__container {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2.4rem;
 }
-.home__description {
-    width: 50rem;
+.hero__description {
+    color: #fff;
     font-size: 1.8rem;
     line-height: 1.8;
     text-align: center;
 }
 
-/********************************/
-/* FEATURED IN */
-/********************************/
-.featured {
-    background-color: #eaedeb;
-    padding: 4.8rem 0 9.6rem;
+.meal-of-the-day {
+    color: #333;
+    padding: 4.8rem 0;
 }
-.featured__heading {
-    color: #888; /* temp */
-    font-size: 1.4rem;
-    font-weight: 500;
-    text-align: center;
-    text-transform: uppercase;
-
-    margin-bottom: 2.4rem;
-}
-.logos {
-    display: flex;
-    justify-content: center;
-    gap: 6.4rem;
-}
-.logos img {
-    height: 2.4rem;
-    filter: brightness(0);
-    opacity: .5;
-}
-
-/********************************/
-/* HOW IT WORKS */
-/********************************/
-.how {
-    background-color: #eaedeb; /* temp */
-    padding: 0 0 9.6rem;
-}
-.step-number {
-    color: #aaa;
-    font-size: 9.6rem;
-    font-weight: 600;
-
-    margin-bottom: 1.2rem;
-}
-.step-description {
-    font-size: 1.8rem;
-    line-height: 1.8;
-}
-
-/* Temp */
-.step-image-container {
-    background-color: var(--primary-color);
-    height: 500px;
-    width: 500px;
-
-    margin: 0 auto;
-}
-
-/********************************/
-/* MEALS */
-/********************************/
-.meals {
-    background-color: #d4dbd6; /* temp */
-    padding: 4.8rem 0 9.6rem;
-}
-.card-wrapper {
-    margin: 0 6.4rem 4.8rem;
-    overflow: hidden;
-}
-
-/* Override arrow buttons and pagination color */
-.swiper-button-next,
-.swiper-button-prev {
-    color: #3e5e48 !important;
-}
-.swiper-pagination-bullet {
-    background-color: #3e5e48 !important;
-}
-
 .meal {
+    width: 40rem;
     background-color: #fff;
     border-radius: 15px;
     cursor: pointer;
-    /* box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, .075); */
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, .1);
     list-style: none;
     overflow: hidden;
+    margin: 0 auto;
 }
 .meal:hover {
     transition: all .3s;
-    box-shadow: inset 0 0 0 2px #94a69a;
-    transform: translateY(-1.2rem);
-}
-.meal:active {
-    cursor: grabbing;
+    /* box-shadow: inset 0 0 0 2px #94a69a; */
+    transform: translateY(1.2rem);
 }
 .meal__image {
     max-width: 100%;
@@ -184,6 +105,7 @@ body {
 }
 .meal__tag {
     display: inline-block;
+    background-color: var(--primary-color);
     border-radius: 100px;
     color: #333;
     font-size: 1.2rem;
@@ -193,14 +115,12 @@ body {
 
     margin-bottom: 2.4rem;
 }
-.meal__tag-paleo {
-    background-color: #d4dbd6;
-}
 .meal__name {
     color: #333;
     font-size: 2rem;
     font-weight: 600;
     text-transform: capitalize;
+    line-height: 1.5;
     
     margin-bottom: 3.2rem;
 }
@@ -223,95 +143,12 @@ body {
 }
 
 /********************************/
-/* PRICING */
+/* FOOTER */
 /********************************/
-.pricing {
-    background-color: #eaedeb;
-    padding: 4.8rem 0 9.6rem;
-}
-/* .tabs {
-    display: flex;
-    justify-content: center;
-
-    margin-bottom: 2.4rem;
-}
-.tabs button {
-    border: none;
-    border: 1px solid var(--primary-color);
-    cursor: pointer;
+.footer {
+    background-color: #eee;
+    color: #555;
     font-size: 1.6rem;
-    padding: 1rem 2rem;
-}
-.tabs__monthly {
-    background-color: var(--primary-color);
-    color: #fff;
-    font-weight: 600;
-}
-.tabs__annual {
-    background-color: #fff;
-    color: var(--primary-color);
-} */
-.pricing__plan {
-    width: 75%;
-    border: 1px solid var(--primary-color); /* temp */
-    border-radius: 15px;
+    text-align: center;
     padding: 3.2rem;
-}
-.pricing__plan-starter {
-    justify-self: end;
-}
-.pricing__plan-complete {
-    justify-self: start;
-}
-.plan-header {
-    text-align: center;
-
-    margin-bottom: 4.8rem;
-}
-.plan-name {
-    color: var(--primary-color);
-    font-size: 2rem;
-    font-weight: 600;
-    letter-spacing: .75;
-    text-transform: uppercase;
-
-    margin-bottom: 3.2rem;
-}
-.plan-price {
-    font-size: 6.4rem;
-    font-weight: 600;
-
-    margin-bottom: 2.4rem;
-}
-.plan-price span {
-    font-size: 3.2rem;
-    font-weight: 600;
-}
-.plan-text {
-    font-size: 1.6rem;
-    line-height: 1.6;
-}
-.list {
-    list-style: none;
-
-    display: flex;
-    flex-direction: column;
-    gap: 3.2rem;
-
-    margin-bottom: 8rem;
-}
-.list__item {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    
-    font-size: 1.8rem;
-}
-.list__icon {
-    height: 2.4rem;
-    width: 2.4rem;
-    color: var(--primary-color);
-}
-.sign-up {
-    text-align: center;
 }

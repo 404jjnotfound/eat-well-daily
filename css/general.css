@@ -2,7 +2,6 @@
 /* GENERAL USABLE COMPONENTS */
 /********************************/
 .container {
-    /* background-color: greenyellow; */
     max-width: 120rem;
     margin: 0 auto;
 }
@@ -25,18 +24,19 @@
 }
 
 .heading-primary {
-    color: var(--primary-color);
-    font-size: 6.4rem;
+    color: #fff;
+    font-size: 3.2rem;
     font-weight: 700;
     text-transform: capitalize;
 }
 .heading-secondary {
-    color: var(--primary-color);
-    font-size: 3.2rem;
+    color: #333;
+    font-size: 2.4rem;
     font-weight: 600;
+    text-align: center;
     text-transform: capitalize;
 
-    margin-bottom: 8rem;
+    margin-bottom: 2.4rem;
 }
 .heading-tertiary {
     color: #333;
@@ -61,13 +61,4 @@
 .button:hover,
 .button:active {
     background-color: #24442f;
-}
-
-.hidden {
-    display: none;
-}
-
-/* For icons (from ionicons) */
-.list__icon-paint-red {
-    color: red; /* temp */
 }

@@ -3,375 +3,81 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/general.css">
+        <title>EatWell Daily</title>
         <!-- Link google font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">        
-        <!-- Link swiper -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-        <title>Finals Website</title>
+        <!-- Link css -->
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/general.css">
     </head>
     <body>
         <header class="header">
-            <a href="#">
-                <p class="logo">Logo</p>
-            </a>
+            <img src="images/logo.png" alt="EatWell Logo" class="logo" />
 
             <nav class="nav">
                 <ul class="nav__list">
-                    <li><a href="#" class="nav__link">How it works</a></li>
-                    <li><a href="#" class="nav__link">Meals</a></li>
-                    <!-- <li><a href="#" class="nav__link">Testimonials</a></li> -->
-                    <li><a href="#" class="nav__link">Pricing</a></li>
-                    <!-- <li><a href="#" class="nav__link">Contact</a></li> -->
+                    <li><a href="index.html" class="nav__link">Home</a></li>
+                    <li><a href="meals.html" class="nav__link">Meals</a></li>
+                    <li><a href="plan.html" class="nav__link">Plan</a></li>
+                    <li><a href="contact.html" class="nav__link">Contact</a></li>
                 </ul>
             </nav>
         </header>
 
+        <!--======================================= HOME =======================================-->
         <main>
-            <!--======================================= HOME =======================================-->
-            <section class="home" id="home">
-                <div class="home__container">
-                    <h1 class="heading-primary">Make every meal count</h1>
-                    <p class="home__description">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                        Quo nulla voluptate corrupti maxime dolorum, deserunt porro, 
-                        laboriosam eveniet culpa veritatis rem quia excepturi iste sequi.
+            <section class="hero">
+                <div class="hero__container">
+                    <h1 class="heading-primary">Welcome to EatWell Daily</h1>
+                    <p class="hero__description">
+                        Your daily dose of nutritious meals.
                     </p>
-                    <a href="#" class="button">Start eating well</a>
-                </div>
-
-            </section>
-
-            <!--======================================= FEATURED IN =======================================-->
-            <section class="featured">
-                <div class="container">
-                    <h2 class="featured__heading">Featured in</h2>
-
-                    <div class="logos">
-                        <img src="images/logos/business-insider-logo.png" alt="Business Insider logo."/>
-                        <img src="images/logos/epicurious-logo.png" alt="Epicurious logo."/>
-                        <img src="images/logos/healthline-logo.png" alt="Healthline logo."/>
-                        <img src="images/logos/kitchn-logo.png" alt="Kitchnn logo."/>
-                    </div>
+                    <a href="meals.html" class="button">Explore meals</a>
                 </div>
             </section>
 
-            <!--======================================= HOW IT WORKS =======================================-->
-            <section class="how">
-                <div class="center-text">
-                    <h2 class="heading-secondary">How it works</h2>
-                </div>
+            <section class="meal-of-the-day">
+                <h2 class="heading-secondary">Meal of the Day</h2>
 
-                <div class="container grid grid__2-columns">
-                    <!-- STEP 1 -->
-                    <div class="step-container">
-                        <p class="step-number">01</p>
-                        <h3 class="heading-tertiary">Order your meals</h3>
-                        <p class="step-description">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                            Velit mollitia praesentium est aut natus quibusdam, tenetur 
-                            placeat accusantium explicabo nihil numquam voluptatem ab iste expedita!
-                            Accusamus, aut enim. Eaque, earum!
-                        </p>
-                    </div>
-                    <div class="step-image-container">
-                        &nbsp;
+                <div class="meal">
+                    <div>
+                        <img class="meal__image" src="" alt=""/>
                     </div>
 
-                    <!-- STEP 2 -->
-                    <div class="step-image-container">
-                        &nbsp;
-                    </div>
-                    <div class="step-container">
-                        <p class="step-number">02</p>
-                        <h3 class="heading-tertiary">Delivered right next to your doorstep</h3>
-                        <p class="step-description">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                            Velit mollitia praesentium est aut natus quibusdam, tenetur 
-                            placeat accusantium explicabo nihil numquam voluptatem ab iste expedita!
-                            Accusamus, aut enim. Eaque, earum!
-                        </p>
-                    </div>
-
-                    <!-- STEP 3 -->
-                    <div class="step-container">
-                        <p class="step-number">03</p>
-                        <h3 class="heading-tertiary">Eat and enjoy</h3>
-                        <p class="step-description">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                            Velit mollitia praesentium est aut natus quibusdam, tenetur 
-                            placeat accusantium explicabo nihil numquam voluptatem ab iste expedita!
-                            Accusamus, aut enim. Eaque, earum!
-                        </p>
-                    </div>
-                    <div class="step-image-container">
-                        &nbsp;
-                    </div>
-                </div>
-
-            </section>
-
-            <!--======================================= MEALS =======================================-->
-            <section class="meals">
-                <div class="container">
-                    <h2 class="heading-secondary">Meals</h2>
-                </div>
-
-                <div class="container swiper">
-                    <div class="card-wrapper">
-                        <ul class="card-list swiper-wrapper">
-                            <!-- MEAL 01 -->
-                            <li class="meal swiper-slide">
-                                <div>
-                                    <img class="meal__image" src="images/meals/puttanesca-pork-chops.png" alt="Puttanesca pork chops meal."/>
-                                </div>
-    
-                                <div class="meal__content">
-                                    <p class="meal__tag meal__tag-paleo">Paleo</p>
-                                    <p class="meal__name">Puttanesca pork chops</p>
-                                    <ul class="meal__attributes">
-                                        <li class="meal__attribute">
-                                            <ion-icon class="meal__icon" name="flame-outline"></ion-icon>
-                                            <span><strong>650</strong> calories</span>
-                                        </li>
-        
-                                        <li class="meal__attribute">
-                                            <ion-icon class="meal__icon" name="restaurant-outline"></ion-icon>
-                                            <span>NutriScore &reg; <strong>74</strong></span>
-                                        </li>
-        
-                                        <li class="meal__attribute">
-                                            <ion-icon class="meal__icon" name="star-outline"></ion-icon>
-                                            <span><strong>4.6</strong> rating (3)</span>
-                                        </li>
-                                    </ul>
-                                    </div>
+                    <div class="meal__content">
+                        <p class="meal__tag">&nbsp;</p>
+                        <p class="meal__name">&nbsp;</p>
+                        <ul class="meal__attributes">
+                            <li class="meal__attribute">
+                                <ion-icon class="meal__icon" name="flame-outline"></ion-icon>
+                                <span><strong><span class="calorie-count">&nbsp;</span></strong> calories</span>
                             </li>
-    
-                            <!-- MEAL 02 -->
-                            <li class="meal swiper-slide">
-                                <div>
-                                    <img class="meal__image" src="images/meals/white-bean-veggie-salad.png" alt="White bean & veggie salad meal."/>
-                                </div>
-    
-                                <div class="meal__content">
-                                    <p class="meal__tag meal__tag-paleo">Vegan</p>
-                                    <p class="meal__name">White bean & veggie salad</p>
-                                    <ul class="meal__attributes">
-                                        <li class="meal__attribute">
-                                            <ion-icon class="meal__icon" name="flame-outline"></ion-icon>
-                                            <span><strong>400</strong> calories</span>
-                                        </li>
-        
-                                        <li class="meal__attribute">
-                                            <ion-icon class="meal__icon" name="restaurant-outline"></ion-icon>
-                                            <span>NutriScore &reg; <strong>92</strong></span>
-                                        </li>
-        
-                                        <li class="meal__attribute">
-                                            <ion-icon class="meal__icon" name="star-outline"></ion-icon>
-                                            <span><strong>4.7</strong> rating (20)</span>
-                                        </li>
-        
-                                    </ul>
-                                </div>
-                            </li>
-    
-                            <!-- MEAL 03 -->
-                            <li class="meal swiper-slide">
-                                <div>
-                                    <img class="meal__image" src="images/meals/chickpea-pasta-with-mushrooms-and-kale.png" alt="Chickpea pasta with mushrooms & kale meal."/>
-                                </div>
-    
-                                <div class="meal__content">
-                                    <p class="meal__tag meal__tag-paleo">Vegetarian</p>
-                                    <p class="meal__name">Chickpea</p>
-                                    <ul class="meal__attributes">
-                                        <li class="meal__attribute">
-                                            <ion-icon class="meal__icon" name="flame-outline"></ion-icon>
-                                            <span><strong>500</strong> calories</span>
-                                        </li>
-        
-                                        <li class="meal__attribute">
-                                            <ion-icon class="meal__icon" name="restaurant-outline"></ion-icon>
-                                            <span>NutriScore &reg; <strong>89</strong></span>
-                                        </li>
-        
-                                        <li class="meal__attribute">
-                                            <ion-icon class="meal__icon" name="star-outline"></ion-icon>
-                                            <span><strong>4.1</strong> rating (11)</span>
-                                        </li>
-        
-                                    </ul>
-                                </div>
-    
-                            </li>
-    
-                            <!-- MEAL 04 -->
-                            <li class="meal swiper-slide">
-                                <div>
-                                    <img class="meal__image" src="images/meals/spinach-lima-bean-&-crispy-pancetta-pasta.png" alt="Spinach, Lima Bean & Crispy Pancetta Pasta meal"/>
-                                </div>
-    
-                                <div class="meal__content">
-                                    <p class="meal__tag meal__tag-paleo">Anti-inflammatory</p>
-                                    <p class="meal__name">Crispy Pancetta Pasta</p>
-                                    <ul class="meal__attributes">
-                                        <li class="meal__attribute">
-                                            <ion-icon class="meal__icon" name="flame-outline"></ion-icon>
-                                            <span><strong>477</strong> calories</span>
-                                        </li>
-        
-                                        <li class="meal__attribute">
-                                            <ion-icon class="meal__icon" name="restaurant-outline"></ion-icon>
-                                            <span>NutriScore &reg; <strong>95</strong></span>
-                                        </li>
-        
-                                        <li class="meal__attribute">
-                                            <ion-icon class="meal__icon" name="star-outline"></ion-icon>
-                                            <span><strong>5.0</strong> rating (8)</span>
-                                        </li>
-        
-                                    </ul>
-                                </div>
-                            </li>
-    
-                            <!-- MEAL 05 -->
-                            <li class="meal swiper-slide">
-                                <div>
-                                    <img class="meal__image" src="images/meals/creamy-white-chili-with-cream-cheese.png" alt="Creamy White Chili with Cream Cheese meal."/>
-                                </div>
-    
-                                <div class="meal__content">
-                                    <p class="meal__tag meal__tag-paleo">Gluten-free</p>
-                                    <p class="meal__name">Cream Cheese</p>
-                                    <ul class="meal__attributes">
-                                        <li class="meal__attribute">
-                                            <ion-icon class="meal__icon" name="flame-outline"></ion-icon>
-                                            <span><strong>313</strong> calories</span>
-                                        </li>
-        
-                                        <li class="meal__attribute">
-                                            <ion-icon class="meal__icon" name="restaurant-outline"></ion-icon>
-                                            <span>NutriScore &reg; <strong>91</strong></span>
-                                        </li>
-        
-                                        <li class="meal__attribute">
-                                            <ion-icon class="meal__icon" name="star-outline"></ion-icon>
-                                            <span><strong>4.3</strong> rating (39)</span>
-                                        </li>
-        
-                                    </ul>
-                                </div>
-    
-                            </li>
-    
-                        </ul>
-    
-                        <!-- PAGINATION -->
-                        <div class="swiper-pagination"></div>
-    
-                        <!-- NAVIGATION BUTTONS -->
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-    
-                    </div>
 
-                </div>
-
-            </section>
-
-            <!--======================================= PRICING =======================================-->
-            <section class="pricing">
-                <div class="container">
-                    <h2 class="heading-secondary">Pricing</h2>
-                </div>
-
-                <!-- TAB LINKS -->
-                <!-- <div class="tabs">
-                    <button class="tabs__monthly">Monthly</button>
-                    <button class="tabs__annual">Annual</button>
-                </div> -->
-
-                <div class="container grid grid__2-columns">
-                    <!-- STARTER PLAN -->
-                    <div class="pricing__plan pricing__plan-starter">
-                        <header class="plan-header">
-                            <p class="plan-name">Starter</p>
-                            <p class="plan-price"><span>$</span> 399</p>
-                            <p class="plan-text">per month. That's just $13 per meal!</p>
-                        </header>
-
-                        <ul class="list">
-                            <li class="list__item">
-                                <ion-icon class="list__icon" name="checkmark-outline"></ion-icon>
-                                <span>1 meal per day</span>
+                            <li class="meal__attribute">
+                                <ion-icon class="meal__icon" name="restaurant-outline"></ion-icon>
+                                <span>NutriScore &reg; <strong>74</strong></span>
                             </li>
-                            <li class="list__item">
-                                <ion-icon class="list__icon" name="checkmark-outline"></ion-icon>
-                                <span>Order from 8am to 8pm</span>
-                            </li>
-                            <li class="list__item">
-                                <ion-icon class="list__icon" name="checkmark-outline"></ion-icon>
-                                <span>Delivery is free</span>
-                            </li>
-                            <li class="list__item">
-                                <ion-icon class="list__icon list__icon-paint-red" name="close-outline"></ion-icon>
-                                <span>Get access to latest recipes</span>
+
+                            <li class="meal__attribute">
+                                <ion-icon class="meal__icon" name="star-outline"></ion-icon>
+                                <span><strong><span class="rating">&nbsp;</span></strong> rating (<span class="rating-count">&nbsp;</span>)</span>
                             </li>
                         </ul>
-
-                        <div class="sign-up">
-                            <a class="button" href="#">Get Started</a>
-                        </div>
                     </div>
-
-                    <!-- COMPLETE PLAN -->
-                    <div class="pricing__plan pricing__plan-complete">
-                        <header class="plan-header">
-                            <p class="plan-name">Complete</p>
-                            <p class="plan-price"><span>$</span> 649</p>
-                            <p class="plan-text">per month. That's just $11 per meal!</p>
-                        </header>
-
-                        <ul class="list">
-                            <li class="list__item">
-                                <ion-icon class="list__icon" name="checkmark-outline"></ion-icon>
-                                <span>2 meals per day</span>
-                            </li>
-                            <li class="list__item">
-                                <ion-icon class="list__icon" name="checkmark-outline"></ion-icon>
-                                <span>Order 24/7</span>
-                            </li>
-                            <li class="list__item">
-                                <ion-icon class="list__icon" name="checkmark-outline"></ion-icon>
-                                <span>Delivery is free</span>
-                            </li>
-                            <li class="list__item">
-                                <ion-icon class="list__icon" name="checkmark-outline"></ion-icon>
-                                <span>Get access to latest recipes</span>
-                            </li>
-                        </ul>
-
-                        <div class="sign-up">
-                            <a class="button" href="#">Get Started</a>
-                        </div>
-                    </div>
-
                 </div>
-
             </section>
-
         </main>
 
-        <!-- Link ionicons -->
+        <footer class="footer">
+            <p>© 2025 EatWell Daily</p>
+        </footer>
+
+        <!-- Link Ionicons -->
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-        <!-- Link swiper -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script src="main.js"></script>
+        <!-- Link Javascript file -->
+        <script src="js/script.js"></script>
     </body>
 </html>
