@@ -145,3 +145,8 @@
     width: 2.4rem;
     color: var(--primary-color);
 }
+
+/* For tabs */
+.hidden {
+    display: none;
+}

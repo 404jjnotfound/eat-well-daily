@@ -92,7 +92,7 @@ const diets = [
     [
         {
             name: "Parmesan-Crusted Cauliflower",
-            img: "../images/paleo/meal01.png", alt: "Parmesan-Crusted Cauliflower meal",
+            img: "../images/weight-loss/meal01.png", alt: "Parmesan-Crusted Cauliflower meal",
             calories: "140", rating: "4.3", ratingCount: "3"
         }
     ]
@@ -101,7 +101,7 @@ const diets = [
 let name, img, alt, calories, rating, ratingCount;
 let mealCount = 0;
 
-// Assign every meal attributes to every meal element 
+// Assign every meal content to every meal element 
 for (let diet = 0; diet < diets.length; ++diet) {
     for (let meal = 0; meal < diets[diet].length; ++meal) {
         name = diets[diet][meal].name;
@@ -138,3 +138,139 @@ for (let diet = 0; diet < diets.length; ++diet) {
         `;                    
     }
 }
+
+// TABS LOGIC
+// Display meals based on the specified diet
+// Get elements
+const mealsEl = document.querySelectorAll(".meals .meal"); // get all meals together
+const tabsEl = document.querySelector(".meals .tabs"); // get tabs parent element
+const tabLinksEl = document.querySelectorAll(".meals .tab-link"); // get all tabs together
+const tab1El = document.querySelector(".meals .tab-link:nth-child(1)");
+const tab2El = document.querySelector(".meals .tab-link:nth-child(2)");
+const tab3El = document.querySelector(".meals .tab-link:nth-child(3)");
+const tab4El = document.querySelector(".meals .tab-link:nth-child(4)");
+const tab5El = document.querySelector(".meals .tab-link:nth-child(5)");
+const tab6El = document.querySelector(".meals .tab-link:nth-child(6)");
+const tab7El = document.querySelector(".meals .tab-link:nth-child(7)");
+const tab8El = document.querySelector(".meals .tab-link:nth-child(8)");
+
+const updateStyle = (tabEl) => {
+    for (let tab = 0; tab < tabLinksEl.length; ++tab) {
+        if (tabLinksEl[tab].classList.contains("tab-link-full")) {
+            tabLinksEl[tab].classList.remove("tab-link-full");
+            break;
+        }
+    }
+    tabEl.classList.add("tab-link-full");
+};
+
+// Set initial
+mealsEl.forEach((meal) => {
+    if (!meal.classList.contains("anti-inflammatory")) {
+        meal.classList.add("hidden");
+    }
+});
+
+// Anti-inflammatory tab clicked
+tab1El.addEventListener("click", () => {
+    mealsEl.forEach((meal) => {
+        if (!meal.classList.contains("anti-inflammatory")) {
+            meal.classList.add("hidden");
+        }
+        else { meal.classList.remove("hidden"); }
+    });
+
+    // Update CSS
+    updateStyle(tab1El);
+});
+
+// Gluten-free tab clicked
+tab2El.addEventListener("click", () => {
+    mealsEl.forEach((meal) => {
+        if (!meal.classList.contains("gluten-free")) {
+            meal.classList.add("hidden");
+        }
+        else { meal.classList.remove("hidden"); }
+    });
+
+    // Update CSS
+    updateStyle(tab2El);
+});
+
+// High-fiber tab clicked
+tab3El.addEventListener("click", () => {
+    mealsEl.forEach((meal) => {
+        if (!meal.classList.contains("high-fiber")) {
+            meal.classList.add("hidden");
+        }
+        else { meal.classList.remove("hidden"); }
+    });
+
+    // Update CSS
+    updateStyle(tab3El);;
+});
+
+// Mediterranean tab clicked
+tab4El.addEventListener("click", () => {
+    mealsEl.forEach((meal) => {
+        if (!meal.classList.contains("mediterranean")) {
+            meal.classList.add("hidden");
+        }
+        else { meal.classList.remove("hidden"); }
+    });
+
+    // Update CSS
+    updateStyle(tab4El);
+});
+
+// Paleo tab clicked
+tab5El.addEventListener("click", () => {
+    mealsEl.forEach((meal) => {
+        if (!meal.classList.contains("paleo")) {
+            meal.classList.add("hidden");
+        }
+        else { meal.classList.remove("hidden");}
+    });
+
+    // Update CSS
+    updateStyle(tab5El);
+});
+
+// Vegan tab clicked
+tab6El.addEventListener("click", () => {
+    mealsEl.forEach((meal) => {
+        if (!meal.classList.contains("vegan")) {
+            meal.classList.add("hidden");
+        }
+        else { meal.classList.remove("hidden"); }
+    });
+
+    // Update CSS
+    updateStyle(tab6El);
+});
+
+// Vegetarian tab clicked
+tab7El.addEventListener("click", () => {
+    mealsEl.forEach((meal) => {
+        if (!meal.classList.contains("vegetarian")) {
+            meal.classList.add("hidden");
+        }
+        else { meal.classList.remove("hidden"); }
+    });
+
+    // Update CSS
+    updateStyle(tab7El);
+});
+
+// Weight-loss tab clicked
+tab8El.addEventListener("click", () => {
+    mealsEl.forEach((meal) => {
+        if (!meal.classList.contains("weight-loss")) {
+            meal.classList.add("hidden");
+        }
+        else { meal.classList.remove("hidden"); }
+    });
+
+    // Update CSS
+    updateStyle(tab8El);
+});
