@@ -1,4 +1,4 @@
-/*==================================== MEALS ==================================== */
+/*=========================================== MEALS ===========================================*/
 const diets = [
     // Anti-inflammatory
     [
@@ -43,33 +43,6 @@ const diets = [
         }
     ],
 
-    // High-fiber
-    [
-        {
-            name: "Easy Pea & Spinach Carbonara",
-            img: "../images/high-fiber/meal01.png", alt: "Easy Pea & Spinach Carbonara meal",
-            calories: "430", rating: "4.0", ratingCount: "28"
-        }
-    ],
-
-    // Mediterranean
-    [
-        {
-            name: "Sweet & Spicy Roasted Salmon with Wild Rice Pilaf",
-            img: "../images/mediterranean/meal01.png", alt: "Sweet & Spicy Roasted Salmon with Wild Rice Pilaf meal",
-            calories: "339", rating: "4.3", ratingCount: "6"
-        }
-    ],
-
-    // Paleo
-    [
-        {
-            name: "Puttanesca pork chops",
-            img: "../images/paleo/meal01.png", alt: "Puttanesca Pork Chops meal",
-            calories: "650", rating: "4.6", ratingCount: "3"
-        }
-    ],
-
     // Vegan
     [
         {
@@ -85,15 +58,6 @@ const diets = [
             name: "Chickpea Pasta with Mushrooms & Kale",
             img: "../images/vegetarian/meal01.png", alt: "Chickpea Pasta with Mushrooms & Kale meal",
             calories: "340", rating: "4.1", ratingCount: "14"
-        }
-    ],
-
-    // Weight-loss
-    [
-        {
-            name: "Parmesan-Crusted Cauliflower",
-            img: "../images/weight-loss/meal01.png", alt: "Parmesan-Crusted Cauliflower meal",
-            calories: "140", rating: "4.3", ratingCount: "3"
         }
     ]
 ];
@@ -139,7 +103,7 @@ for (let diet = 0; diet < diets.length; ++diet) {
     }
 }
 
-// TABS LOGIC
+/*=========================================== TABS LOGIC ===========================================*/
 // Display meals based on the specified diet
 // Get elements
 const mealsEl = document.querySelectorAll(".meals .meal"); // get all meals together
@@ -149,10 +113,6 @@ const tab1El = document.querySelector(".meals .tab-link:nth-child(1)");
 const tab2El = document.querySelector(".meals .tab-link:nth-child(2)");
 const tab3El = document.querySelector(".meals .tab-link:nth-child(3)");
 const tab4El = document.querySelector(".meals .tab-link:nth-child(4)");
-const tab5El = document.querySelector(".meals .tab-link:nth-child(5)");
-const tab6El = document.querySelector(".meals .tab-link:nth-child(6)");
-const tab7El = document.querySelector(".meals .tab-link:nth-child(7)");
-const tab8El = document.querySelector(".meals .tab-link:nth-child(8)");
 
 const updateStyle = (tabEl) => {
     for (let tab = 0; tab < tabLinksEl.length; ++tab) {
@@ -197,23 +157,23 @@ tab2El.addEventListener("click", () => {
     updateStyle(tab2El);
 });
 
-// High-fiber tab clicked
+// Vegan tab clicked
 tab3El.addEventListener("click", () => {
     mealsEl.forEach((meal) => {
-        if (!meal.classList.contains("high-fiber")) {
+        if (!meal.classList.contains("vegan")) {
             meal.classList.add("hidden");
         }
         else { meal.classList.remove("hidden"); }
     });
 
     // Update CSS
-    updateStyle(tab3El);;
+    updateStyle(tab3El);
 });
 
-// Mediterranean tab clicked
+// Vegetarian tab clicked
 tab4El.addEventListener("click", () => {
     mealsEl.forEach((meal) => {
-        if (!meal.classList.contains("mediterranean")) {
+        if (!meal.classList.contains("vegetarian")) {
             meal.classList.add("hidden");
         }
         else { meal.classList.remove("hidden"); }
@@ -223,54 +183,54 @@ tab4El.addEventListener("click", () => {
     updateStyle(tab4El);
 });
 
-// Paleo tab clicked
-tab5El.addEventListener("click", () => {
-    mealsEl.forEach((meal) => {
-        if (!meal.classList.contains("paleo")) {
-            meal.classList.add("hidden");
-        }
-        else { meal.classList.remove("hidden");}
-    });
+/*=========================================== MODAL LOGIC ===========================================*/
+// Get elements
+const modal = document.getElementById("meal-modal");
+const modalImg = document.getElementById("modal__img");
+const modalTitle = document.getElementById("modal__title");
+const modalNutriInfo = document.getElementById("modal__nutri-info");
+const modalDesc = document.getElementById("modal__description");
+const closeBtn = document.querySelector(".close");
+const viewMoreBtn = document.getElementById("view-more-button");
+const viewLessBtn = document.getElementById("view-less-button");
+const moreInfo = document.getElementById("more-info");
+const modalIngredients = document.getElementById("modal__ingredients");
+const modalInstructions = document.getElementById("modal__instructions");
 
-    // Update CSS
-    updateStyle(tab5El);
+// Every meal card clicked
+mealsEl.forEach((card) => {
+    card.addEventListener("click", () => {
+        modalImg.src = card.getAttribute("data-img");
+        modalTitle.textContent = card.getAttribute("data-name");
+        modalNutriInfo.textContent = card.getAttribute("data-nutrition");
+        modalDesc.textContent = card.getAttribute("data-description");
+        modalIngredients.innerHTML = card.getAttribute("data-ingredients").split('#br').map(i => `<li>${i}</li>`).join('');
+        modalInstructions.innerHTML = card.getAttribute("data-instructions").split('#br').map(i => `<li>${i}</li>`).join('');
+
+        moreInfo.classList.remove("display"); // hide more info
+        modal.classList.add("show"); // show modal
+        viewMoreBtn.style.display = "block"; // display view more button
+    });
 });
 
-// Vegan tab clicked
-tab6El.addEventListener("click", () => {
-    mealsEl.forEach((meal) => {
-        if (!meal.classList.contains("vegan")) {
-            meal.classList.add("hidden");
-        }
-        else { meal.classList.remove("hidden"); }
-    });
-
-    // Update CSS
-    updateStyle(tab6El);
+// View more button clicked
+viewMoreBtn.addEventListener("click", () => {
+    moreInfo.classList.add("display"); // display more info
+    viewMoreBtn.style.display = "none"; // hide view more button
 });
 
-// Vegetarian tab clicked
-tab7El.addEventListener("click", () => {
-    mealsEl.forEach((meal) => {
-        if (!meal.classList.contains("vegetarian")) {
-            meal.classList.add("hidden");
-        }
-        else { meal.classList.remove("hidden"); }
-    });
-
-    // Update CSS
-    updateStyle(tab7El);
+// View less button clicked
+viewLessBtn.addEventListener("click", () => {
+    moreInfo.classList.remove("display"); // hide more info
+    viewMoreBtn.style.display = "block"; // display view more button
 });
 
-// Weight-loss tab clicked
-tab8El.addEventListener("click", () => {
-    mealsEl.forEach((meal) => {
-        if (!meal.classList.contains("weight-loss")) {
-            meal.classList.add("hidden");
-        }
-        else { meal.classList.remove("hidden"); }
-    });
+// Close button clicked
+closeBtn.addEventListener("click", () => {
+    modal.classList.remove("show"); // hide modal
+});
 
-    // Update CSS
-    updateStyle(tab8El);
+// Outside of modal clicked => hide modal
+window.addEventListener("click", (e) => { 
+    if (e.target === modal) modal.classList.remove("show"); 
 });

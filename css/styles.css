@@ -101,6 +101,110 @@ body {
     font-weight: 600;
 }
 
+/* Modal */
+.modal {
+    background-color: rgba(0, 0, 0, .3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    
+    pointer-events: none;
+    opacity: 0;
+    overflow: auto;
+
+    transition: opacity .3s ease;
+}
+.show {
+    pointer-events: auto;
+    opacity: 1;
+}
+.modal__content {
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .4);
+    /* max-width: 600px;
+    width: 90%; */
+    width: 600px;
+    max-width: 100%;
+    margin-top: 300px;
+    color: #333;
+}
+#modal__data {
+    padding: 32px;
+}
+.close {
+    position: absolute;
+    top: 12px;
+    right: 24px;
+
+    cursor: pointer;
+    color: #f0f8f0;
+    font-size: 3.2rem;
+}
+#modal__img {
+    max-width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+}
+#modal__title {
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 1.5;
+    text-transform: capitalize;
+
+    margin-bottom: 2.4rem;
+}
+#modal__nutri-info {
+    font-size: 1.8rem;
+    line-height: 1.8;
+
+    margin-bottom: 1.2rem;
+}
+#modal__description {
+    font-size: 1.8rem;
+    line-height: 1.8;
+}
+#more-info {
+    padding: 3.2rem;
+}
+#modal__ingredients,
+#modal__instructions {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin-left: 4.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+
+    margin-bottom: 2.4rem;
+}
+
+.collapse {
+    display: none;
+}
+.collapse.display {
+    display: block;
+}
+#view-more-button,
+#view-less-button {
+    display: block;
+    border: none;
+    background-color: #529655;
+    border-radius: 50px;
+    color: #f0f8f0;
+    cursor: pointer;
+    font-size: 1.6rem;
+    margin: 0 auto;
+    padding: 1.2rem 3rem;
+
+    margin-bottom: 2.4rem;
+}
+
 /********************************/
 /* FOOTER */
 /********************************/
