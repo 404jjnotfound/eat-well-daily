@@ -3,41 +3,71 @@ const diets = [
     // Anti-inflammatory
     [
         {
-            name: "Spinach, Lima Bean & Crispy Pancetta Pasta",
+            name: "Spinach, Lima Bean & Crispy Pancetta Pasta", cookingTime: 20,
             img: "../images/anti-inflammatory/meal01.png", alt: "Spinach, Lima Bean & Crispy Pancetta Pasta meal",
             calories: "477", rating: "5.0", ratingCount: "8"
         },
         {
-            name: "Italian Wedding Soup",
+            name: "Italian Wedding Soup", cookingTime: 20,
             img: "../images/anti-inflammatory/meal02.png", alt: "Italian Wedding Soup meal",
             calories: "415", rating: "4.7", ratingCount: "34"
+        },
+        {
+            name: "Spinach & Artichoke Dip Pasta", cookingTime: 20,
+            img: "../images/anti-inflammatory/meal03.png", alt: "Spinach & Artichoke Dip Pasta meal",
+            calories: "371", rating: "4.6", ratingCount: "33"
+        },
+        {
+            name: "Hearty Chickpea & Spinach Stew", cookingTime: 30,
+            img: "../images/anti-inflammatory/meal04.png", alt: "Hearty Chickpea & Spinach Stew meal",
+            calories: "401", rating: "4.8", ratingCount: "48"
+        },
+        {
+            name: "Kale & Avocado Salad with Blueberries & Edamame", cookingTime: 20,
+            img: "../images/anti-inflammatory/meal05.png", alt: "Kale & Avocado Salad with Blueberries & Edamame meal",
+            calories: "376", rating: "4.8", ratingCount: "16"
+        },
+        {
+            name: "Quinoa Chili with Sweet Potatoes", cookingTime: 30,
+            img: "../images/anti-inflammatory/meal06.png", alt: "Quinoa Chili with Sweet Potatoes meal",
+            calories: "346", rating: "4.4", ratingCount: "9"
+        },
+        {
+            name: "Salt & Vinegar Sheet-Pan Chicken & Brussels Sprouts", cookingTime: 45,
+            img: "../images/anti-inflammatory/meal07.png", alt: "Salt & Vinegar Sheet-Pan Chicken & Brussels Sprouts meal",
+            calories: "387", rating: "4.5", ratingCount: "10"
+        },
+        {
+            name: "Baked Eggs in Tomato Sauce with Kale", cookingTime: 30,
+            img: "../images/anti-inflammatory/meal08.png", alt: "Baked Eggs in Tomato Sauce with Kale meal",
+            calories: "344", rating: "4.6", ratingCount: "10"
         }
     ],
 
     // Gluten-free
     [ 
         {
-            name: "Creamy White Chili with Cream Cheese",
+            name: "Creamy White Chili with Cream Cheese", cookingTime: 30,
             img: "../images/gluten-free/meal01.png", alt: "Creamy White Chili with Cream Cheese meal",
             calories: "313", rating: "4.3", ratingCount: "39"
         },
         {
-            name: "Chhole (Chickpea Curry)",
+            name: "Chhole (Chickpea Curry)", cookingTime: 20,
             img: "../images/gluten-free/meal02.png", alt: "Chhole (Chickpea Curry) meal",
             calories: "278", rating: "4.7", ratingCount: "73"
         },
         {
-            name: "Chipotle Chicken Quinoa Burrito Bowl",
+            name: "Chipotle Chicken Quinoa Burrito Bowl", cookingTime: 30,
             img: "../images/gluten-free/meal03.png", alt: "Chipotle Chicken Quinoa Burrito Bowl meal",
             calories: "452", rating: "4.7", ratingCount: "46"
         },
         {
-            name: "Smoky Collards & Shrimp with Cheesy Grits",
+            name: "Smoky Collards & Shrimp with Cheesy Grits", cookingTime: 45,
             img: "../images/gluten-free/meal04.png", alt: "Smoky Collards & Shrimp with Cheesy Grits meal",
             calories: "443", rating: "4.2", ratingCount: "12"
         },
         {
-            name: "Chicken Hummus Bowls",
+            name: "Chicken Hummus Bowls", cookingTime: 25,
             img: "../images/gluten-free/meal05.png", alt: "Chicken Hummus Bowls meal",
             calories: "485", rating: "4.7", ratingCount: "26"
         }
@@ -46,18 +76,33 @@ const diets = [
     // Vegan
     [
         {
-            name: "White Bean & Veggie Salad",
+            name: "White Bean & Veggie Salad", cookingTime: 10,
             img: "../images/vegan/meal01.png", alt: "White Bean & Veggie Salad meal",
             calories: "360", rating: "4.7", ratingCount: "20"
+        },
+        {
+            name: "Grilled Cauliflower Steaks with Almond Pesto & Butter Beans", cookingTime: 25,
+            img: "../images/vegan/meal02.png", alt: "Grilled Cauliflower Steaks with Almond Pesto & Butter Beans meal",
+            calories: "427", rating: "4.7", ratingCount: "9"
+        },
+        {
+            name: "Tofu Poke", cookingTime: 30,
+            img: "../images/vegan/meal03.png", alt: "Tofu Poke meal",
+            calories: "262", rating: "5.0", ratingCount: "1"
         }
     ],
 
     // Vegetarian
     [
         {
-            name: "Chickpea Pasta with Mushrooms & Kale",
+            name: "Chickpea Pasta with Mushrooms & Kale", cookingTime: 30,
             img: "../images/vegetarian/meal01.png", alt: "Chickpea Pasta with Mushrooms & Kale meal",
             calories: "340", rating: "4.1", ratingCount: "14"
+        },
+        {
+            name: "Red Lentil Soup with Saffron", cookingTime: 40,
+            img: "../images/vegetarian/meal02.png", alt: "Red Lentil Soup with Saffron meal",
+            calories: "280", rating: "4.6", ratingCount: "21"
         }
     ]
 ];
@@ -69,6 +114,7 @@ let mealCount = 0;
 for (let diet = 0; diet < diets.length; ++diet) {
     for (let meal = 0; meal < diets[diet].length; ++meal) {
         name = diets[diet][meal].name;
+        cookingTime = diets[diet][meal].cookingTime;
         img = diets[diet][meal].img;
         alt = diets[diet][meal].alt;
         calories = diets[diet][meal].calories;
@@ -89,8 +135,8 @@ for (let diet = 0; diet < diets.length; ++diet) {
                     </li>
 
                     <li class="meal__attribute">
-                        <ion-icon class="meal__icon" name="restaurant-outline"></ion-icon>
-                        <span>NutriScore &reg; <strong>74</strong></span>
+                        <ion-icon class="meal__icon" name="time-outline"></ion-icon>
+                        <span><strong>${cookingTime}</strong> minutes (cooking time)</span>
                     </li>
 
                     <li class="meal__attribute">

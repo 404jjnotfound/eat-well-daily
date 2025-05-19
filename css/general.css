@@ -3,7 +3,6 @@
 /********************************/
 .container {
     max-width: 130rem;
-    width: 95%;
     margin: 0 auto;
 }
 
@@ -23,7 +22,7 @@
 }
 
 .heading-primary {
-    color: #fff;
+    color: #f0f8f0;
     font-size: 3.2rem;
     font-weight: 700;
     text-transform: capitalize;
@@ -50,7 +49,7 @@
 .button:visited {
     text-decoration: none;
     background-color: var(--primary-color);
-    color: #fff; /* temp */
+    color: #f0f8f0; /* temp */
     font-size: 1.8rem;
     font-weight: 600;
     padding: 1.5rem 3rem;
@@ -82,15 +81,33 @@
     list-style: none;
     font-size: 1.6rem;
 }
-.nav__link:link,
-.nav__link:visited {
+.nav__link {
     text-decoration: none;
-    color: #fff;
+    color: #f0f8f0;
     font-weight: 600;
-    transition: all .3s;
+
+    position: relative;
+    transition: color .3s ease;
 }
-.nav__link:hover {
-    text-decoration: underline;
+.nav__link::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #f0f8f0;
+    left: 50%;
+    bottom: 0;
+    transition: all .3s ease;
+    transform: translateX(-50%);
+}
+.nav__link:hover::after {
+    width: 100%;
+}
+/* .nav__link:active::after {
+    width: 100%;
+} */
+.nav__link.active::after {
+    width: 100%;
 }
 
 /********************************/

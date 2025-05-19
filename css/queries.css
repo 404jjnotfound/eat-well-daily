@@ -1,0 +1,19 @@
+/* Below 1500px */
+@media (max-width: 93.73em) {
+    .meals__gallery {
+        max-width: 90rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Below 1080px */
+@media (max-width: 67.5em) {
+    .meals__gallery {
+        max-width: 40rem;
+        grid-template-columns: 1fr;
+    }
+    .tabs {
+        max-width: 40rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
