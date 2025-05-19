@@ -11,9 +11,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
     font-size: 62.5%;
 }
+
 body {
     font-family: "Rubik", sans-serif;
     font-weight: 400;
@@ -27,6 +29,7 @@ body {
     background: linear-gradient(rgba(45, 45, 45, 0.5), rgba(45, 45, 45, .5)), url("../images/hero-image.jpg") no-repeat center center/cover;
     padding: 26.8rem 0;
 }
+
 .hero__container {
     margin: 0 auto;
     display: flex;
@@ -34,6 +37,7 @@ body {
     align-items: center;
     gap: 2.4rem;
 }
+
 .hero__description {
     color: #fff;
     font-size: 1.8rem;
@@ -45,10 +49,12 @@ body {
     color: #333;
     padding: 4.8rem 0;
 }
+
 .meal-of-the-day .meal {
     max-width: 40rem;
     width: 90%;
 }
+
 .meal-of-the-day .meal__tag {
     display: inline-block;
     background-color: var(--primary-color);
@@ -70,18 +76,21 @@ body {
     width: 90%; */
     padding: 4.8rem 0;
 }
+
 .meals__gallery {
     gap: 6.4rem;
 }
+
 .tabs {
     max-width: 76.8rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin: 0 auto;
     gap: 1.2rem;
-    
+
     margin-bottom: 6.4rem;
 }
+
 .tab-link {
     background-color: #f0f8f0;
     border: none;
@@ -94,10 +103,12 @@ body {
     padding: 1.2rem 2.4rem;
     transition: all .3s;
 }
+
 .tab-link:hover {
     background-color: #529655;
     color: #f0f8f0;
 }
+
 .tab-link-full {
     background-color: #529655;
     color: #f0f8f0;
@@ -115,17 +126,19 @@ body {
     left: 0;
     height: 100vh;
     width: 100vw;
-    
+
     pointer-events: none;
     opacity: 0;
     overflow: auto;
 
     transition: opacity .3s ease;
 }
+
 .show {
     pointer-events: auto;
     opacity: 1;
 }
+
 .modal__content {
     /* max-width: 600px;
     width: 90%; */
@@ -137,9 +150,11 @@ body {
     margin-top: 300px;
     color: #333;
 }
+
 #modal__data {
     padding: 32px;
 }
+
 .close {
     position: absolute;
     top: 12px;
@@ -149,11 +164,13 @@ body {
     color: #f0f8f0;
     font-size: 3.2rem;
 }
+
 #modal__img {
     max-width: 100%;
     aspect-ratio: 3 / 2;
     object-fit: cover;
 }
+
 #modal__title {
     font-size: 3.2rem;
     font-weight: 600;
@@ -162,19 +179,23 @@ body {
 
     margin-bottom: 2.4rem;
 }
+
 #modal__nutri-info {
     font-size: 1.8rem;
     line-height: 1.8;
 
     margin-bottom: 1.2rem;
 }
+
 #modal__description {
     font-size: 1.8rem;
     line-height: 1.8;
 }
+
 #more-info {
     padding: 3.2rem;
 }
+
 #modal__ingredients,
 #modal__instructions {
     font-size: 1.6rem;
@@ -190,9 +211,11 @@ body {
 .collapse {
     display: none;
 }
+
 .collapse.display {
     display: block;
 }
+
 #view-more-button,
 #view-less-button {
     display: block;
@@ -218,11 +241,32 @@ body {
     text-align: center;
     padding: 3.2rem;
 }
+
 /********************************/
 /* For Contact Us Page - JT 5/18/2025 */
 /********************************/
-.contact {
+.content h2 {
+    font-size: 35px;
     text-align: center;
+    padding-top: 30px;
+    padding-left: 15px;
+}
+
+.content h3 {
     font-size: 20px;
+    text-align: center;
+    font-weight: lighter;
     padding: 10px;
 }
+
+.contactInfo {
+    text-align: center;
+    font-size: 13px;
+    padding: 30px;
+}
+
+.contactInfo h3 {
+    padding: 8px;
+}
+
+
