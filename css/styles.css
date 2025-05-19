@@ -245,28 +245,44 @@ body {
 /********************************/
 /* For Contact Us Page - JT 5/18/2025 */
 /********************************/
-.content h2 {
-    font-size: 35px;
+.contact {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    padding: 10px;
+    padding-top: 75px;
+}
+
+.content {
     text-align: center;
-    padding-top: 30px;
-    padding-left: 15px;
+}
+
+.content h2 {
+    font-size: 60px;
 }
 
 .content h3 {
-    font-size: 20px;
-    text-align: center;
     font-weight: lighter;
-    padding: 10px;
+    padding-top: 15px;
+}
+
+.containerCI {
+    display: flex;
+    padding-top: 100px;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
 }
 
 .contactInfo {
-    text-align: center;
-    font-size: 13px;
-    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
 }
 
 .contactInfo h3 {
-    padding: 8px;
+    padding: 10px;
 }
-
-
