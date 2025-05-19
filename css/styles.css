@@ -251,6 +251,8 @@ body {
     font-size: 20px;
     padding: 10px;
     padding-top: 75px;
+    
+    background: url("../images/contact_bg_img.jpg") center center/cover;
 }
 
 .content {
