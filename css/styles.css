@@ -14,12 +14,14 @@
 
 html {
     font-size: 62.5%;
+    /* overflow-x: hidden; */
 }
 
 body {
     font-family: "Rubik", sans-serif;
     font-weight: 400;
     line-height: 1;
+    /* overflow-x: hidden; */
 }
 
 /********************************/
@@ -72,12 +74,13 @@ body {
 /* MEALS page */
 /********************************/
 .meals {
-    /* max-width: 1300px;
-    width: 90%; */
+    /* max-width: 1300px; */
+    /* width: 90%; */
     padding: 4.8rem 0;
 }
 
 .meals__gallery {
+    width: 90%;
     gap: 6.4rem;
 }
 
@@ -147,7 +150,7 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, .4);
     width: 60rem;
     max-width: 100%;
-    margin-top: 300px;
+    margin-top: 30rem;
     color: #333;
 }
 

@@ -6,7 +6,7 @@
     }
 }
 
-/* Below 1080px */
+/* Below 1080px (Tablets) */
 @media (max-width: 67.5em) {
     .meals__gallery {
         max-width: 40rem;
@@ -16,4 +16,101 @@
         max-width: 40rem;
         grid-template-columns: repeat(2, 1fr);
     }
+
+    /* MOBILE NAVIGATION */
+    .button-mobile-nav {
+        display: block;
+    }
+    .nav {
+        background-color: var(--primary-color);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        /* For sliding animation */
+        transform: translateX(-100%);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .5s ease-in;
+
+        /* Hide */
+        opacity: 0;
+
+        /* Unaccessible to mouse and keyboard */
+        pointer-events: none;
+
+        /* Hide from screen readers */
+        visibility: hidden;
+    }
+    .nav-open .nav {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        /* For sliding animation */
+        transform: translateX(0);
+    }
+    .nav-open .icon-mobile-nav[name="close-outline"] {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-50%, 50%);
+    }
+    .nav-open .icon-mobile-nav[name="menu-outline"] {
+        display: none;
+    }
+    .nav__list {
+        flex-direction: column;
+        align-items: center;
+        gap: 4.8rem;
+    }
+    .nav__link:link,
+    .nav__link:visited {
+        font-size: 2rem;
+    }
+}
+
+/* Below 500px (Phones) */
+@media (max-width: 31.25em) {
+        .header__container {
+            height: 6rem;
+        }
+        .logo {
+            height: 3.2rem
+        }
+        .icon-mobile-nav {
+            height: 2.4rem;
+            width: 2.4rem;
+        }
+        .heading-primary {
+            font-size: 2.4rem;
+        }
+        .hero__description {
+            font-size: 1.6rem;
+            line-height: 1.6;
+        }
+        .button:link,
+        .button:visited {
+            font-size: 1.6rem;
+            padding: 1.2rem 2.4rem;
+            border-radius: 9px;
+        }
+        .meal-of-the-day .meal {
+            max-width: 35rem;
+        }
+        
+        .tabs {
+            max-width: 20rem;
+            grid-template-columns: 1fr;
+        }
+        .tab-link {
+            font-size: 1.2rem;
+            padding: 1rem 2rem;
+        }
+        .meals__gallery {
+            max-width: 35rem;
+        }
 }
