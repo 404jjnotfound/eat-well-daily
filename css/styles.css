@@ -248,46 +248,118 @@ body {
 /********************************/
 /* For Contact Us Page - JT 5/18/2025 */
 /********************************/
-.contact {
-    display: flex;
-    flex-direction: column;
-    font-size: 20px;
-    padding: 10px;
-    padding-top: 75px;
-    
-    background: url("../images/contact_bg_img.jpg") center center/cover;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
 }
 
-.content {
-    text-align: center;
+.bg {
+    background: url("../images/contact_bg_img.jpg") center center/cover;
+
 }
 
 .content h2 {
-    font-size: 60px;
+    color: #f0f8f0;
+    font-size: 65px;
+    text-align: center;
+    margin: 0;
+    padding-top: 100px;
 }
 
 .content h3 {
+    color: #f0f8f0;
+    font-size: 30px;
     font-weight: lighter;
+    text-align: center;
+    margin: 0;
     padding-top: 15px;
 }
 
 .containerCI {
-    display: flex;
-    padding-top: 100px;
-}
-
-.contactForm {
+    color: #f0f8f0;
     display: flex;
     flex-direction: column;
-    margin: auto;
+   
 }
 
-.contactInfo {
+.textboxPositioning {
     display: flex;
     flex-direction: column;
-    margin: auto;
+    align-items: flex-end;
 }
 
 .contactInfo h3 {
-    padding: 10px;
+    font-size: 30px;
+}
+
+.contactInfo P { 
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 25px;
+}
+
+.textBoxStyled {
+    width: 350px;
+    height: 4.5em;
+    right: 0;
+    position: relative;
+}
+
+.form__input {
+    height: 100%;
+    width: 100%;
+    right: 0;
+    background: #fff;
+    border: 2px solid #5c5656;
+    border-radius: 0.5em;
+    outline: none;
+    color: #000000;
+    padding-left: 1em;
+}
+
+label {
+    position: absolute;
+    background: #ffffff;
+    color: gray;
+    font-family: sans-serif;
+    left: 1em;
+    top: 0.75em;
+    cursor: text;
+    transition: top 350ms ease-in, font-size 500ms ease-in;
+}
+
+.form__input:hover {
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.form__input:focus {
+    border: 2px solid #00ffff;
+}
+
+input[type="text"]:focus~label,
+.form__input:not(:placeholder-shown).form__input:not(:focus)~label {
+    top: -0.5em;
+    font-size: 0.75rem;
+    padding: 0 0.125em;
+}
+
+.containerCI-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contactInfo {
+  flex: 1;
+  padding-top: 100px;
+  margin-left: 150px;
+}
+
+.textboxPositioning {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
