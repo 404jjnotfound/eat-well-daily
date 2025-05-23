@@ -4,6 +4,10 @@
         max-width: 90rem;
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .footer__container {
+        max-width: 90rem;
+    }
 }
 
 /* Below 1080px (Tablets) */
@@ -71,46 +75,63 @@
     .nav__link:visited {
         font-size: 2rem;
     }
+
+    /* Modal */
+    .modal__content {
+        max-width: 50rem;
+    }
+    #modal__title {
+        font-size: 2.4rem;
+    }
+    #modal__nutri-info,
+    #modal__description {
+        font-size: 1.6rem;
+        line-height: 1.6;
+    }
+
+    .footer__container {
+        max-width: 40rem;
+    }
 }
 
 /* Below 500px (Phones) */
 @media (max-width: 31.25em) {
-        .header__container {
-            height: 6rem;
-        }
-        .logo {
-            height: 3.2rem
-        }
-        .icon-mobile-nav {
-            height: 2.4rem;
-            width: 2.4rem;
-        }
-        .heading-primary {
-            font-size: 2.4rem;
-        }
-        .hero__description {
-            font-size: 1.6rem;
-            line-height: 1.6;
-        }
-        .button:link,
-        .button:visited {
-            font-size: 1.6rem;
-            padding: 1.2rem 2.4rem;
-            border-radius: 9px;
-        }
-        .meal-of-the-day .meal {
-            max-width: 35rem;
-        }
-        
-        .tabs {
-            max-width: 20rem;
-            grid-template-columns: 1fr;
-        }
-        .tab-link {
-            font-size: 1.2rem;
-            padding: 1rem 2rem;
-        }
-        .meals__gallery {
-            max-width: 35rem;
-        }
+    .header__container {
+        height: 6rem;
+    }
+    .logo {
+        height: 3.2rem
+    }
+    .icon-mobile-nav {
+        height: 2.4rem;
+        width: 2.4rem;
+    }
+    .heading-primary {
+        font-size: 2.4rem;
+    }
+    .hero__description {
+        font-size: 1.6rem;
+        line-height: 1.6;
+    }
+    .button:link,
+    .button:visited {
+        font-size: 1.6rem;
+        padding: 1.2rem 2.4rem;
+        border-radius: 9px;
+    }
+    .meal-of-the-day .meal {
+        max-width: 35rem;
+    }
+    
+    .tabs {
+        max-width: 20rem;
+        grid-template-columns: 1fr;
+    }
+    .tab-link {
+        font-size: 1.2rem;
+        padding: 1rem 2rem;
+    }
+    .meals__gallery {
+        max-width: 35rem;
+    }
 }
