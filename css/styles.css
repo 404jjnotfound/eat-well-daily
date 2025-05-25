@@ -46,16 +46,27 @@ body {
     text-align: center;
 }
 
+.meal__left,
+.meal__right {
+    transform: scale(.875);
+}
+.meal__left:hover,
+.meal__right:hover {
+    transform: scale(.9375) !important;
+}
 .meal-of-the-day {
+    max-width: 120rem;
+    width: 95%;
+    margin: 0 auto;
     color: #333;
-    padding: 4.8rem 0;
+    padding: 8rem 0;
 }
-
+.meal-of-the-day .grid {
+    gap: 1.2rem;
+}
 .meal-of-the-day .meal {
-    max-width: 40rem;
-    width: 90%;
+    max-width: 60rem;
 }
-
 .meal-of-the-day .meal__tag {
     display: inline-block;
     background-color: var(--primary-color);
@@ -73,7 +84,7 @@ body {
 /* MEALS page */
 /********************************/
 .meals {
-    padding: 4.8rem 0;
+    padding: 8rem 0;
 }
 
 .meals__gallery {

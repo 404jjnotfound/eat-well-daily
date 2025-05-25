@@ -12,6 +12,26 @@
 
 /* Below 1080px (Tablets) */
 @media (max-width: 67.5em) {
+    /* Meals of the Day section */
+    .meal-of-the-day {
+        max-width: 40rem;
+        width: 90%;
+    }
+    .meal-of-the-day .grid__3-columns {
+        grid-template-columns: 1fr;
+    }
+    .meal-of-the-day .grid {
+        gap: 3.2rem;
+    }
+    .meal__left,
+    .meal__right {
+        transform: scale(1);
+    }
+    .meal__left:hover,
+    .meal__right:hover {
+        transform: scale(1) !important;
+    }
+
     .meals__gallery {
         max-width: 40rem;
         grid-template-columns: 1fr;
