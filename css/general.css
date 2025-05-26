@@ -77,7 +77,7 @@
     gap: 2.4rem;
 }
 .logo {
-    height: 4.8rem;
+    max-width: 9.6rem;
 }
 .nav__list {
     display: flex;
