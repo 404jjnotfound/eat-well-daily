@@ -186,7 +186,7 @@
     display: none;
 }
 
-/********************************/
-/* For Contact Us Page - JT 5/18/2025 */
-/********************************/
-
+.footer__logo {
+    filter: brightness(0);
+    opacity: 60%;
+}
