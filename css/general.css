@@ -185,8 +185,3 @@
 .hidden {
     display: none;
 }
-
-.footer__logo {
-    filter: brightness(0);
-    opacity: 60%;
-}

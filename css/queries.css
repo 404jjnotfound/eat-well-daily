@@ -4,10 +4,6 @@
         max-width: 90rem;
         grid-template-columns: repeat(2, 1fr);
     }
-
-    .footer__container {
-        max-width: 90rem;
-    }
 }
 
 /* Below 1080px (Tablets) */
@@ -108,10 +104,6 @@
     #modal__description {
         font-size: 1.6rem;
         line-height: 1.6;
-    }
-
-    .footer__container {
-        max-width: 40rem;
     }
 }
 
