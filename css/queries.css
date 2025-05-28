@@ -4,6 +4,25 @@
         max-width: 90rem;
         grid-template-columns: repeat(2, 1fr);
     }
+
+    /* Contact Page */
+    .textBoxStyled {
+        width: 52.5rem;
+        height: 6.75rem;
+    }
+    input[type="submit"] {
+        font-size: 1.6rem;
+    }
+    .form__input {
+        font-size: 1.6rem;
+    }
+    label {
+        font-size: 1.6rem;
+    }
+    input[type="text"]:focus~label,
+    .form__input:not(:placeholder-shown).form__input:not(:focus)~label {
+        font-size: 1.4rem;
+    }
 }
 
 /* Below 1080px (Tablets) */
@@ -104,6 +123,28 @@
     #modal__description {
         font-size: 1.6rem;
         line-height: 1.6;
+    }
+
+    /* Contact Page */
+    .textboxPositioning {
+        gap: 2.4rem
+    }
+    .textBoxStyled {
+        width: 35rem;
+        height: 4.5rem;
+    }
+    input[type="submit"] {
+        font-size: 1.4rem;
+    }
+    .form__input {
+        font-size: 1.4rem;
+    }
+    label {
+        font-size: 1.2rem;
+    }
+    input[type="text"]:focus~label,
+    .form__input:not(:placeholder-shown).form__input:not(:focus)~label {
+        font-size: 1.2rem;
     }
 }
 

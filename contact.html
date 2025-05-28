@@ -40,43 +40,51 @@
                 <div class="contact-page__container">
                     <h2 class="heading-secondary">Contact Us</h2>
 
-                    <div class="containerCI containerCI-flex">
-                        <div class="textboxPositioning">
-                            <!-- Name -->
-                            <div class="textBoxStyled">
-                                <input 
-                                    type="text" 
-                                    id="name" 
-                                    placeholder=" " 
-                                    class="form__input"/>
-                                <label for="name">Name</label>
+                    <div class="containerCI">
+                        <form>
+                            <div class="textboxPositioning">
+                                <!-- Name -->
+                                <div class="textBoxStyled">
+                                    <input 
+                                        type="text" 
+                                        id="name" 
+                                        placeholder=" " 
+                                        class="form__input name-input"
+                                        required/>
+                                    <label for="name">Name</label>
+                                </div>
+        
+                                <!-- Email -->
+                                <div class="textBoxStyled">
+                                    <input 
+                                        type="text" 
+                                        id="email" 
+                                        placeholder=" " 
+                                        class="form__input email-input"
+                                        required/>
+                                    <label for="email">Email</label>
+                                </div>
+        
+                                <!-- Message-->
+                                <div class="textBoxStyled">
+                                    <input 
+                                        type="text" 
+                                        id="message" 
+                                        placeholder=" " 
+                                        class="form__input message-input"
+                                        required/>
+                                    <label for="message">Message</label>
+                                </div>
+        
+                                <!-- Submit -->
+                                <input type="submit"
+                                        value="Submit"
+                                        class="submit-input"/>
+
                             </div>
-    
-                            <!-- Email -->
-                            <div class="textBoxStyled">
-                                <input 
-                                    type="text" 
-                                    id="email" 
-                                    placeholder=" " 
-                                    class="form__input"/>
-                                <label for="email">Email</label>
-                            </div>
-    
-                            <!-- Message-->
-                            <div class="textBoxStyled">
-                                <input 
-                                    type="text" 
-                                    id="message" 
-                                    placeholder=" " 
-                                    class="form__input"/>
-                                <label for="message">Message</label>
-                            </div>
-    
-                        </div>
-                        
-                        <!-- Submit -->
-                        <input type="submit"
-                                value="Submit"/>
+                            
+                        </form>
+
                     </div>
 
                 </div>
@@ -89,7 +97,6 @@
                 <div class="footer__logo-container">
                     <img src="images/logo.png" alt="EatWell Logo" class="logo footer__logo" />
                 </div>
-                <!-- <p class="footer__title">Address:</p> -->
                 <address class="contacts">
                     <p>STI Academic Center, Quezon Avenue corner<br> Perez Street, Lucena City, 4301 Quezon</p>
 
@@ -108,6 +115,7 @@
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
         <!-- Link JS -->
         <script src="js/navigation.js"></script>
+        <script src="js/contact.js"></script>
 
     </body> 
 
