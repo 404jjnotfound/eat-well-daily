@@ -386,6 +386,7 @@ label {
     border: 2px solid var(--primary-color);
 }
 input[type="text"]:focus~label,
+input[type="email"]:focus~label,
 .form__input:not(:placeholder-shown).form__input:not(:focus)~label {
     top: -0.5em;
     font-size: 1.6rem;
