@@ -10,3 +10,29 @@ links.forEach((link) => {
 document.querySelector(".button-mobile-nav").addEventListener("click", () => {
     document.querySelector(".header").classList.toggle("nav-open");
 });
+
+// STICKY NAVIGATION
+// const sectionHeroEl = document.querySelector(".hero");
+
+// const obs = new IntersectionObserver(
+//     function (entries) {
+//         const ent = entries[0];
+//         console.log(ent);
+
+//         if (ent.isIntersecting === false) {
+//         document.body.classList.add("sticky");
+//         }
+
+//         if (ent.isIntersecting === true) {
+//         document.body.classList.remove("sticky");
+//         }
+//     },
+//     {
+//         // Observe in the viewport
+//         root: null,
+//         threshold: 0,
+//         rootMargin: "-80px"
+//     }
+// )
+
+// obs.observe(sectionHeroEl);
