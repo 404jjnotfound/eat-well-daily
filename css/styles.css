@@ -65,6 +65,9 @@ body {
     gap: 1.2rem;
 }
 .meal-of-the-day .meal {
+    text-decoration: none;
+}
+.meal-of-the-day .meal {
     max-width: 60rem;
 }
 .meal-of-the-day .meal__tag {
