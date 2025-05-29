@@ -338,7 +338,7 @@ body {
     position: relative;
 }
 
-input[type="submit"] {
+.button-submit {
     border: none;
     background-color: var(--primary-color);
     color: #edf3ed;
@@ -351,7 +351,7 @@ input[type="submit"] {
 
     transition: all .3s;
 }
-input[type="submit"]:hover {
+.button-submit:hover {
     background-color: #407643;
 }
 

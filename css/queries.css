@@ -10,7 +10,7 @@
         width: 52.5rem;
         height: 6.75rem;
     }
-    input[type="submit"] {
+    .button-submit {
         font-size: 1.6rem;
     }
     .form__input {
@@ -133,7 +133,7 @@
         width: 35rem;
         height: 4.5rem;
     }
-    input[type="submit"] {
+    .button-submit {
         font-size: 1.4rem;
     }
     .form__input {
