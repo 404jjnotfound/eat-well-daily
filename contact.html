@@ -41,13 +41,14 @@
                     <h2 class="heading-secondary">Contact Us</h2>
 
                     <div class="containerCI">
-                        <form>
+                        <form name="contact" netlify>
                             <div class="textboxPositioning">
                                 <!-- Name -->
                                 <div class="textBoxStyled">
                                     <input 
                                         type="text" 
                                         id="name" 
+                                        name="name"
                                         placeholder=" " 
                                         class="form__input name-input"
                                         required/>
@@ -59,26 +60,28 @@
                                     <input 
                                         type="email" 
                                         id="email" 
+                                        name="email"
                                         placeholder=" " 
                                         class="form__input email-input"
                                         required/>
                                     <label for="email">Email</label>
                                 </div>
         
-                                <!-- Message-->
+                                <!-- Message -->
                                 <div class="textBoxStyled">
                                     <input 
                                         type="text" 
                                         id="message" 
+                                        name="message"
                                         placeholder=" " 
                                         class="form__input message-input"
                                         required/>
                                     <label for="message">Message</label>
                                 </div>
         
-                                <!-- Submit -->
+                                <!-- Submit button -->
                                 <input type="submit"
-                                        value="Submit"
+                                        value="Send"
                                         class="submit-input"/>
 
                             </div>
