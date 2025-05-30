@@ -8,15 +8,15 @@
     
     
 // Update style nav links after it reloads
-// New solution
-const links = document.querySelectorAll(".nav__link");
-const currentPage = window.location.pathname;
-console.log(currentPage);
-links.forEach((link) => {
-    console.log(link.href, currentPage);
-    if (link.href.includes(currentPage)) { link.classList.add("active"); }
-    else { link.classList.remove("active"); }
-});
+// New solution (worst bug than the first one)
+// const links = document.querySelectorAll(".nav__link");
+// const currentPage = window.location.pathname;
+// // console.log(currentPage);
+// links.forEach((link) => {
+//     // console.log(link.href, currentPage);
+//     if (link.href.includes(currentPage)) { link.classList.add("active"); }
+//     else { link.classList.remove("active"); }
+// });
 
 // Mobile nav toggle bar
 document.querySelector(".button-mobile-nav").addEventListener("click", () => {
