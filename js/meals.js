@@ -231,7 +231,6 @@ tab4El.addEventListener("click", () => {
 
 /*=========================================== MODAL LOGIC ===========================================*/
 // Get elements
-const bodyEl = document.body;
 const modal = document.getElementById("meal-modal");
 const modalImg = document.getElementById("modal__img");
 const modalTitle = document.getElementById("modal__title");
@@ -257,8 +256,6 @@ mealsEl.forEach((card) => {
         moreInfo.classList.remove("display"); // hide more info
         modal.classList.add("show"); // show modal
         viewMoreBtn.style.display = "block"; // display view more button
-
-        checkModalState(modal); // check if active or not
     });
 });
 
@@ -277,19 +274,9 @@ viewLessBtn.addEventListener("click", () => {
 // Close button clicked
 closeBtn.addEventListener("click", () => {
     modal.classList.remove("show"); // hide modal
-    checkModalState(modal);
 });
 
 // Outside of modal clicked => hide modal
 window.addEventListener("click", (e) => { 
     if (e.target === modal) modal.classList.remove("show"); 
-    checkModalState(modal);
 });
-
-// Check if modal window is active
-// If it is, make body unscollable
-// If not, make body scrollable
-function checkModalState(modalWindow) {
-    if (modalWindow.classList.contains("show")) { bodyEl.style.overflowY = "hidden"; }
-    else { bodyEl.style.overflowY = "auto"; }
-}

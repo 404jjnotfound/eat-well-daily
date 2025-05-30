@@ -1,6 +1,7 @@
 // Mobile nav toggle bar
 document.querySelector(".button-mobile-nav").addEventListener("click", () => {
     document.querySelector(".header").classList.toggle("nav-open");
+    document.body.classList.toggle("no-scroll");
 });
 
 // Update style nav links after it reloads
@@ -24,8 +25,8 @@ document.querySelector(".button-mobile-nav").addEventListener("click", () => {
     //     else { link.classList.remove("active"); }
     // });
 
-// This will only works when deployed in Netlify
-// Solution 3
+// Update style nav links after it reloads
+// Solution 3 (Warning: This is not a flexible solution )
 // const links = document.querySelectorAll(".nav__link");
 const homeLinkEl = document.querySelector(".link-home");
 const mealsLinkEl = document.querySelector(".link-meals");
