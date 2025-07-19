@@ -1,7 +1,7 @@
 // Mobile nav toggle bar
 document.querySelector(".button-mobile-nav").addEventListener("click", () => {
-    document.querySelector(".header").classList.toggle("nav-open");
-    document.body.classList.toggle("no-scroll");
+  document.querySelector(".header").classList.toggle("nav-open");
+  document.body.classList.toggle("no-scroll");
 });
 
 // Update style nav links after it reloads
@@ -9,21 +9,20 @@ document.querySelector(".button-mobile-nav").addEventListener("click", () => {
 // const links = document.querySelectorAll(".nav__link");
 // const currentPage = window.location.pathname.split("/").pop();
 // links.forEach((link) => {
-    //     if (link.getAttribute("href") === currentPage) { link.classList.add("active"); }
-    //     else { link.classList.remove("active"); }
-    // });
-    
-    
+//     if (link.getAttribute("href") === currentPage) { link.classList.add("active"); }
+//     else { link.classList.remove("active"); }
+// });
+
 // Update style nav links after it reloads
 // New solution (worst bug than the first one)
 // const links = document.querySelectorAll(".nav__link");
 // const currentPage = window.location.pathname;
 // // console.log(currentPage);
 // links.forEach((link) => {
-    //     // console.log(link.href, currentPage);
-    //     if (link.href.includes(currentPage)) { link.classList.add("active"); }
-    //     else { link.classList.remove("active"); }
-    // });
+//     // console.log(link.href, currentPage);
+//     if (link.href.includes(currentPage)) { link.classList.add("active"); }
+//     else { link.classList.remove("active"); }
+// });
 
 // Update style nav links after it reloads
 // Solution 3 (Warning: This is not a flexible solution )
@@ -36,23 +35,22 @@ const currentPath = window.location.pathname;
 
 // If its in contact page
 if (currentPath.includes("/contact")) {
-    homeLinkEl.classList.remove("active");
-    mealsLinkEl.classList.remove("active");
-    contactLinkEl.classList.add("active");
+  homeLinkEl.classList.remove("active");
+  mealsLinkEl.classList.remove("active");
+  contactLinkEl.classList.add("active");
 }
 // If its in meals page
 else if (currentPath.includes("/meals")) {
-    homeLinkEl.classList.remove("active");
-    mealsLinkEl.classList.add("active");
-    contactLinkEl.classList.remove("active");
+  homeLinkEl.classList.remove("active");
+  mealsLinkEl.classList.add("active");
+  contactLinkEl.classList.remove("active");
 }
 // If its in home page
 else if (currentPath.includes("/")) {
-    homeLinkEl.classList.add("active");
-    mealsLinkEl.classList.remove("active");
-    contactLinkEl.classList.remove("active");
+  homeLinkEl.classList.add("active");
+  mealsLinkEl.classList.remove("active");
+  contactLinkEl.classList.remove("active");
 }
-
 
 // STICKY NAVIGATION
 // const sectionHeroEl = document.querySelector(".hero");

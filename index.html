@@ -1,171 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>EatWell Daily</title>
-        <!-- Link google font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">        
-        <!-- Link css -->
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/general.css">
-        <link rel="stylesheet" href="css/queries.css">
-    </head>
-    <body>
-        <header class="header">
-            <div class="header__container">
-                <div>
-                    <img src="images/logo.png" alt="EatWell Logo" class="logo"/>
-                </div>
-    
-                <nav class="nav">
-                    <ul class="nav__list">
-                        <li><a href="index.html" class="nav__link link-home">Home</a></li>
-                        <li><a href="meals.html" class="nav__link link-meals">Meals</a></li>
-                        <li><a href="contact.html" class="nav__link link-contact">Contact</a></li>
-                    </ul>
-                </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EatWell Daily</title>
 
-                <button class="button-mobile-nav">
-                    <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-                    <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
-                </button>
-            </div>
-        </header>
+    <!-- Link Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
 
-        <main>
-            <section class="hero">
-                <div class="hero__container">
-                    <h1 class="heading-primary">Welcome to EatWell Daily</h1>
-                    <p class="hero__description">
-                        Your daily dose of nutritious meals.
-                    </p>
-                    <a href="meals.html" class="button">Explore meals</a>
-                </div>
-            </section>
+    <!-- Link Styles -->
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles//general.css" />
+    <link rel="stylesheet" href="/styles//queries.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <div>
+          <img src="images/logo.png" alt="EatWell Logo" class="logo" />
+        </div>
 
-            <section class="meal-of-the-day">
-                <h2 class="heading-secondary">Meals of the Day</h2>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a href="index.html" class="nav__link link-home">Home</a></li>
+            <li><a href="meals.html" class="nav__link link-meals">Meals</a></li>
+            <li>
+              <a href="contact.html" class="nav__link link-contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
 
-                <div class="grid grid__3-columns">
-                    <!-- Left -->
-                    <a class="meal meal__left" href="meals.html">
-                        <div>
-                            <img class="meal__image" src="" alt=""/>
-                        </div>
-    
-                        <div class="meal__content">
-                            <p class="meal__tag">&nbsp;</p>
-                            <p class="meal__name">&nbsp;</p>
-                            <ul class="meal__attributes">
-                                <li class="meal__attribute">
-                                    <ion-icon class="meal__icon" name="flame-outline"></ion-icon>
-                                    <span><strong><span class="calorie-count">&nbsp;</span></strong> calories</span>
-                                </li>
-    
-                                <li class="meal__attribute">
-                                    <ion-icon class="meal__icon" name="time-outline"></ion-icon>
-                                    <span class="meal__time">&nbsp;</span>
-                                </li>
-    
-                                <li class="meal__attribute">
-                                    <ion-icon class="meal__icon" name="star-outline"></ion-icon>
-                                    <span><strong><span class="rating">&nbsp;</span></strong> rating (<span class="rating-count">&nbsp;</span>)</span>
-                                </li>
-                            </ul>
-                        </div>
-    
-                    </a>
-    
-                    <!-- Middle -->
-                    <a class="meal" href="meals.html">
-                        <div>
-                            <img class="meal__image" src="" alt=""/>
-                        </div>
-    
-                        <div class="meal__content">
-                            <p class="meal__tag">&nbsp;</p>
-                            <p class="meal__name">&nbsp;</p>
-                            <ul class="meal__attributes">
-                                <li class="meal__attribute">
-                                    <ion-icon class="meal__icon" name="flame-outline"></ion-icon>
-                                    <span><strong><span class="calorie-count">&nbsp;</span></strong> calories</span>
-                                </li>
-    
-                                <li class="meal__attribute">
-                                    <ion-icon class="meal__icon" name="time-outline"></ion-icon>
-                                    <span class="meal__time">&nbsp;</span>
-                                </li>
-    
-                                <li class="meal__attribute">
-                                    <ion-icon class="meal__icon" name="star-outline"></ion-icon>
-                                    <span><strong><span class="rating">&nbsp;</span></strong> rating (<span class="rating-count">&nbsp;</span>)</span>
-                                </li>
-                            </ul>
-                        </div>
-    
-                    </a>
-    
-                    <!-- Right-->
-                    <a class="meal meal__right" href="meals.html">
-                        <div>
-                            <img class="meal__image" src="" alt=""/>
-                        </div>
-    
-                        <div class="meal__content">
-                            <p class="meal__tag">&nbsp;</p>
-                            <p class="meal__name">&nbsp;</p>
-                            <ul class="meal__attributes">
-                                <li class="meal__attribute">
-                                    <ion-icon class="meal__icon" name="flame-outline"></ion-icon>
-                                    <span><strong><span class="calorie-count">&nbsp;</span></strong> calories</span>
-                                </li>
-    
-                                <li class="meal__attribute">
-                                    <ion-icon class="meal__icon" name="time-outline"></ion-icon>
-                                    <span class="meal__time">&nbsp;</span>
-                                </li>
-    
-                                <li class="meal__attribute">
-                                    <ion-icon class="meal__icon" name="star-outline"></ion-icon>
-                                    <span><strong><span class="rating">&nbsp;</span></strong> rating (<span class="rating-count">&nbsp;</span>)</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </a>
-                    
-                </div>
+        <button class="button-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+      </div>
+    </header>
 
+    <main>
+      <section class="hero">
+        <div class="hero__container">
+          <h1 class="heading-primary">Welcome to EatWell Daily</h1>
+          <p class="hero__description">Your daily dose of nutritious meals.</p>
+          <a href="meals.html" class="button">Explore meals</a>
+        </div>
+      </section>
 
-            </section>
+      <section class="meal-of-the-day">
+        <h2 class="heading-secondary">Meals of the Day</h2>
 
-        </main>
-
-        <footer class="footer">
-            <div class="footer__container">
-                <div class="footer__logo-container">
-                    <img src="images/logo.png" alt="EatWell Logo" class="logo footer__logo" />
-                </div>
-                <address class="contacts">
-                    <p>STI Academic Center, Quezon Avenue corner<br> Perez Street, Lucena City, 4301 Quezon</p>
-
-                    <p>
-                        <a class="footer__link" href="tel:415-201-6370">09975934911</a> <br>
-                        <a class="footer__link" href="mailto:hello@omnifood.com">testEmail@gmail.com</a>
-                    </p>
-                </address>
+        <div class="grid grid__3-columns">
+          <!-- Left -->
+          <a class="meal meal__left" href="meals.html">
+            <div>
+              <img class="meal__image" src="" alt="" />
             </div>
 
-            <p class="copyright">&copy; 2025 EatWell Daily. All rights reserved.</p>
-        </footer>
+            <div class="meal__content">
+              <p class="meal__tag">&nbsp;</p>
+              <p class="meal__name">&nbsp;</p>
+              <ul class="meal__attributes">
+                <li class="meal__attribute">
+                  <ion-icon class="meal__icon" name="flame-outline"></ion-icon>
+                  <span
+                    ><strong><span class="calorie-count">&nbsp;</span></strong>
+                    calories</span
+                  >
+                </li>
 
-        <!-- Link Ionicons -->
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-        <!-- Link Javascript files -->
-        <script src="js/script.js"></script>
-        <script src="js/navigation.js"></script>
-    </body>
+                <li class="meal__attribute">
+                  <ion-icon class="meal__icon" name="time-outline"></ion-icon>
+                  <span class="meal__time">&nbsp;</span>
+                </li>
+
+                <li class="meal__attribute">
+                  <ion-icon class="meal__icon" name="star-outline"></ion-icon>
+                  <span
+                    ><strong><span class="rating">&nbsp;</span></strong> rating
+                    (<span class="rating-count">&nbsp;</span>)</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </a>
+
+          <!-- Middle -->
+          <a class="meal" href="meals.html">
+            <div>
+              <img class="meal__image" src="" alt="" />
+            </div>
+
+            <div class="meal__content">
+              <p class="meal__tag">&nbsp;</p>
+              <p class="meal__name">&nbsp;</p>
+              <ul class="meal__attributes">
+                <li class="meal__attribute">
+                  <ion-icon class="meal__icon" name="flame-outline"></ion-icon>
+                  <span
+                    ><strong><span class="calorie-count">&nbsp;</span></strong>
+                    calories</span
+                  >
+                </li>
+
+                <li class="meal__attribute">
+                  <ion-icon class="meal__icon" name="time-outline"></ion-icon>
+                  <span class="meal__time">&nbsp;</span>
+                </li>
+
+                <li class="meal__attribute">
+                  <ion-icon class="meal__icon" name="star-outline"></ion-icon>
+                  <span
+                    ><strong><span class="rating">&nbsp;</span></strong> rating
+                    (<span class="rating-count">&nbsp;</span>)</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </a>
+
+          <!-- Right-->
+          <a class="meal meal__right" href="meals.html">
+            <div>
+              <img class="meal__image" src="" alt="" />
+            </div>
+
+            <div class="meal__content">
+              <p class="meal__tag">&nbsp;</p>
+              <p class="meal__name">&nbsp;</p>
+              <ul class="meal__attributes">
+                <li class="meal__attribute">
+                  <ion-icon class="meal__icon" name="flame-outline"></ion-icon>
+                  <span
+                    ><strong><span class="calorie-count">&nbsp;</span></strong>
+                    calories</span
+                  >
+                </li>
+
+                <li class="meal__attribute">
+                  <ion-icon class="meal__icon" name="time-outline"></ion-icon>
+                  <span class="meal__time">&nbsp;</span>
+                </li>
+
+                <li class="meal__attribute">
+                  <ion-icon class="meal__icon" name="star-outline"></ion-icon>
+                  <span
+                    ><strong><span class="rating">&nbsp;</span></strong> rating
+                    (<span class="rating-count">&nbsp;</span>)</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__logo-container">
+          <img
+            src="images/logo.png"
+            alt="EatWell Logo"
+            class="logo footer__logo"
+          />
+        </div>
+        <address class="contacts">
+          <p>
+            STI Academic Center, Quezon Avenue corner<br />
+            Perez Street, Lucena City, 4301 Quezon
+          </p>
+
+          <p>
+            <a class="footer__link" href="tel:415-201-6370">09975934911</a>
+            <br />
+            <a class="footer__link" href="mailto:hello@omnifood.com"
+              >testEmail@gmail.com</a
+            >
+          </p>
+        </address>
+      </div>
+
+      <p class="copyright">&copy; 2025 EatWell Daily. All rights reserved.</p>
+    </footer>
+
+    <!-- Link Ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- Link Scripts -->
+    <script src="/scripts/main.js"></script>
+    <script src="/scripts/navigation.js"></script>
+  </body>
 </html>

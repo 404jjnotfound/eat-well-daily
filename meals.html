@@ -1,63 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>EatWell Daily</title>
-        <!-- Link google font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-        <!-- Link css -->
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/general.css">
-        <link rel="stylesheet" href="css/queries.css">
-    </head>
-    <body>
-        <header class="header">
-            <div class="header__container">
-                <div>
-                    <img src="images/logo.png" alt="EatWell Logo" class="logo" />
-                </div>
-    
-                <nav class="nav">
-                    <ul class="nav__list">
-                        <li><a href="index.html" class="nav__link link-home">Home</a></li>
-                        <li><a href="meals.html" class="nav__link link-meals">Meals</a></li>
-                        <li><a href="contact.html" class="nav__link link-contact">Contact</a></li>
-                    </ul>
-                </nav>
-                
-                <button class="button-mobile-nav">
-                    <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-                    <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
-                </button>
-            </div>
-        </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EatWell Daily</title>
 
-        <main>
-            <section class="meals">
-                <h2 class="heading-secondary">Healthy Meals</h2>
+    <!-- Link Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
 
-                <!-- TABS -->
-                <div class="tabs">
-                    <button class="tab-link tab-link-full">Anti-Inflammatory</button>
-                    <button class="tab-link">Gluten-Free</button>
-                    <button class="tab-link">Vegan</button>
-                    <button class="tab-link">Vegetarian</button>
-                </div>
+    <!-- Link Styles -->
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles//general.css" />
+    <link rel="stylesheet" href="/styles//queries.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <div>
+          <img src="images/logo.png" alt="EatWell Logo" class="logo" />
+        </div>
 
-                <div class="container meals__gallery grid grid__3-columns">
-                    <!--========== ANTI-INFLAMMATORY DIET ==========-->
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a href="index.html" class="nav__link link-home">Home</a></li>
+            <li><a href="meals.html" class="nav__link link-meals">Meals</a></li>
+            <li>
+              <a href="contact.html" class="nav__link link-contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
 
-                    <!-- MEAL 01 -->
-                    <div class="meal anti-inflammatory"
-                        data-name="Spinach, Lima Bean & Crispy Pancetta Pasta"
-                        data-description="We opt for fresh spinach pasta here — it cooks quickly and adds a pop of color. Cooking lima beans in pancetta drippings infuses them with flavor."
-                        data-img="../images/anti-inflammatory/meal01.png"
-                        data-alt="Spinach, Lima Bean & Crispy Pancetta Pasta meal"
-                        data-nutrition="477 calories, 16g fat, 62g carbs, 21g protein"
-                        data-ingredients="
+        <button class="button-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="meals">
+        <h2 class="heading-secondary">Healthy Meals</h2>
+
+        <!-- TABS -->
+        <div class="tabs">
+          <button class="tab-link tab-link-full">Anti-Inflammatory</button>
+          <button class="tab-link">Gluten-Free</button>
+          <button class="tab-link">Vegan</button>
+          <button class="tab-link">Vegetarian</button>
+        </div>
+
+        <div class="container meals__gallery grid grid__3-columns">
+          <!--========== ANTI-INFLAMMATORY DIET ==========-->
+
+          <!-- MEAL 01 -->
+          <div
+            class="meal anti-inflammatory"
+            data-name="Spinach, Lima Bean & Crispy Pancetta Pasta"
+            data-description="We opt for fresh spinach pasta here — it cooks quickly and adds a pop of color. Cooking lima beans in pancetta drippings infuses them with flavor."
+            data-img="../images/anti-inflammatory/meal01.png"
+            data-alt="Spinach, Lima Bean & Crispy Pancetta Pasta meal"
+            data-nutrition="477 calories, 16g fat, 62g carbs, 21g protein"
+            data-ingredients="
                             1 (9 ounce) package fresh spinach pasta #br
                             1 tablespoon extra-virgin olive oil #br
                             4 ounces diced pancetta #br
@@ -69,7 +77,7 @@
                             3 tablespoons lemon juice #br
                             ¾ cup grated pecorino cheese, divided
                         "
-                        data-instructions="
+            data-instructions="
                             Bring a medium saucepan of water to a boil over high heat. 
                             Add pasta and cook according to package directions. 
                             Reserve 1 cup of water, then drain the pasta.
@@ -84,18 +92,20 @@
                             Add the pasta and the reserved water to the pan. Cook, stirring, until the sauce is thickened, 
                             about 1 minute. Stir in lemon juice, the pancetta and half the pecorino. Serve the pasta topped 
                             with the remaining pecorino.
-                        ">
-                        &nbsp;
-                    </div>
+                        "
+          >
+            &nbsp;
+          </div>
 
-                    <!-- MEAL 02 -->
-                    <div class="meal anti-inflammatory"
-                        data-name="Italian Wedding Soup"
-                        data-description="Forget the marble-size meatballs you find in many versions of this Italian Wedding Soup. In this easy recipe, they're full-size, full-flavored and plenty filling."
-                        data-img="../images/anti-inflammatory/meal02.png"
-                        data-alt="Italian Wedding Soup meal"
-                        data-nutrition="415 calories, 19g fat, 36g carbs, 26g protein"
-                        data-ingredients="
+          <!-- MEAL 02 -->
+          <div
+            class="meal anti-inflammatory"
+            data-name="Italian Wedding Soup"
+            data-description="Forget the marble-size meatballs you find in many versions of this Italian Wedding Soup. In this easy recipe, they're full-size, full-flavored and plenty filling."
+            data-img="../images/anti-inflammatory/meal02.png"
+            data-alt="Italian Wedding Soup meal"
+            data-nutrition="415 calories, 19g fat, 36g carbs, 26g protein"
+            data-ingredients="
                             4 tablespoons extra-virgin olive oil - divided #br
                             1 ⅓ cups chopped yellow onion #br
                             ⅔ cup chopped carrot #br
@@ -109,7 +119,7 @@
                             4 cups baby spinach #br
                             ¼ cup grated Parmesan cheese
                         "
-                        data-instructions="
+            data-instructions="
                             Heat 1 tablespoon oil in a large pot or Dutch oven over medium-high heat. 
                             Add onion, carrot, celery and garlic; cook, stirring occasionally, until 
                             the onion is translucent, 4 to 5 minutes.
@@ -121,18 +131,20 @@
                             the spinach is wilted, 2 to 4 minutes.
                             #br
                             Serve sprinkled with cheese and drizzled with the remaining 3 tablespoons oil.                        
-                        ">
-                        &nbsp;
-                    </div>
+                        "
+          >
+            &nbsp;
+          </div>
 
-                    <!-- MEAL 03 -->
-                    <div class="meal anti-inflammatory"
-                        data-name="Spinach & Artichoke Dip Pasta"
-                        data-description="If you've ever wanted to make a meal out of warm spinach and artichoke dip, this creamy pasta is for you. And here's what's almost as good as the flavor of this comforting dish: the fact that this healthy dinner takes just 20 minutes to prepare."
-                        data-img="../images/anti-inflammatory/meal03.png"
-                        data-alt="Spinach & Artichoke Dip Pasta meal"
-                        data-nutrition="371 calories, 9g fat, 56g carbs, 17g protein"
-                        data-ingredients="
+          <!-- MEAL 03 -->
+          <div
+            class="meal anti-inflammatory"
+            data-name="Spinach & Artichoke Dip Pasta"
+            data-description="If you've ever wanted to make a meal out of warm spinach and artichoke dip, this creamy pasta is for you. And here's what's almost as good as the flavor of this comforting dish: the fact that this healthy dinner takes just 20 minutes to prepare."
+            data-img="../images/anti-inflammatory/meal03.png"
+            data-alt="Spinach & Artichoke Dip Pasta meal"
+            data-nutrition="371 calories, 9g fat, 56g carbs, 17g protein"
+            data-ingredients="
                             8 ounces whole-wheat rotini #br
                             1 (5 ounce) package baby spinach, roughly chopped #br
                             4 ounces reduced-fat cream cheese, cut into chunks #br
@@ -142,7 +154,7 @@
                             ¼ teaspoon ground pepper #br
                             1 (14 ounce) can artichoke hearts, rinsed, squeezed dry and chopped (see Tip)
                         "
-                        data-instructions="
+            data-instructions="
                             Bring a large saucepan of water to a boil. Cook pasta according to package directions. Drain.
                             #br
                             Combine spinach and 1 tablespoon water in a large saucepan over medium heat. 
@@ -154,18 +166,20 @@
                             #br
                             Drain as much liquid as possible from the spinach. Stir the drained spinach into the sauce, 
                             along with artichokes and the pasta. Cook until warmed through.                  
-                        ">
-                        &nbsp;
-                    </div>
+                        "
+          >
+            &nbsp;
+          </div>
 
-                    <!-- MEAL 04 -->
-                    <div class="meal anti-inflammatory"
-                        data-name="Hearty Chickpea & Spinach Stew"
-                        data-description="This satisfying stew comes together in a snap. Mashed chickpeas add body to the broth, and tomato paste adds a savory note without adding too much sodium to this healthy recipe for weight loss."
-                        data-img="../images/anti-inflammatory/meal04.png"
-                        data-alt="Hearty Chickpea & Spinach Stew meal"
-                        data-nutrition="401 calories, 13g fat, 41g carbs, 32g protein"
-                        data-ingredients="
+          <!-- MEAL 04 -->
+          <div
+            class="meal anti-inflammatory"
+            data-name="Hearty Chickpea & Spinach Stew"
+            data-description="This satisfying stew comes together in a snap. Mashed chickpeas add body to the broth, and tomato paste adds a savory note without adding too much sodium to this healthy recipe for weight loss."
+            data-img="../images/anti-inflammatory/meal04.png"
+            data-alt="Hearty Chickpea & Spinach Stew meal"
+            data-nutrition="401 calories, 13g fat, 41g carbs, 32g protein"
+            data-ingredients="
                             2 (15 ounce) cans low-sodium chickpeas, rinsed, divided #br
                             1 tablespoon olive oil #br
                             12 ounces 93%-lean ground turkey #br
@@ -182,7 +196,7 @@
                             3 cups IQF (individually quick-frozen) spinach (8 oz.) #br
                             ¼ cup grated Parmesan cheese (Optional)
                         "
-                        data-instructions="
+            data-instructions="
                             Mash 1 can chickpeas with a potato masher or fork. Set aside.
                             #br
                             Heat oil in a large pot over medium-high heat. 
@@ -199,18 +213,20 @@
                             Add spinach and increase heat to medium-high, Cook, stirring, until 
                             the spinach is heated through, 1 to 2 minutes. Ladle the soup into bowls. 
                             Garnish each serving with 1 tablespoon Parmesan, if desired.
-                        ">
-                        &nbsp;
-                    </div> 
+                        "
+          >
+            &nbsp;
+          </div>
 
-                    <!-- MEAL 05 -->
-                    <div class="meal anti-inflammatory"
-                        data-name="Kale & Avocado Salad with Blueberries & Edamame"
-                        data-description="Bursting with nutrient-rich produce, this California-inspired salad is a delicious and satisfying way to get your vitamins. We love the unique combination of blueberries, edamame, and goat cheese."
-                        data-img="../images/anti-inflammatory/meal05.png"
-                        data-alt="Kale & Avocado Salad with Blueberries & Edamame meal"
-                        data-nutrition="376 calories, 31g fat, 21g carbs, 9g protein"
-                        data-ingredients="
+          <!-- MEAL 05 -->
+          <div
+            class="meal anti-inflammatory"
+            data-name="Kale & Avocado Salad with Blueberries & Edamame"
+            data-description="Bursting with nutrient-rich produce, this California-inspired salad is a delicious and satisfying way to get your vitamins. We love the unique combination of blueberries, edamame, and goat cheese."
+            data-img="../images/anti-inflammatory/meal05.png"
+            data-alt="Kale & Avocado Salad with Blueberries & Edamame meal"
+            data-nutrition="376 calories, 31g fat, 21g carbs, 9g protein"
+            data-ingredients="
                             6 cups stemmed and coarsely chopped curly kale #br
                             1 avocado, diced #br
                             1 cup blueberries #br
@@ -225,7 +241,7 @@
                             1 teaspoon Dijon mustard #br
                             1/2 teaspoon salt
                         "
-                        data-instructions="
+            data-instructions="
                             Place kale in a large bowl and, using your hands, massage to soften the leaves. 
                             Add avocado, blueberries, tomatoes, edamame, almonds, and goat cheese.
                             #br
@@ -233,18 +249,20 @@
                             a tight-fitting lid. Whisk or shake well.
                             #br
                             Drizzle the vinaigrette over the salad and toss to combine.                       
-                        ">
-                        &nbsp;
-                    </div> 
+                        "
+          >
+            &nbsp;
+          </div>
 
-                    <!-- MEAL 06 -->
-                    <div class="meal anti-inflammatory"
-                        data-name="Quinoa Chili with Sweet Potatoes"
-                        data-description="This hearty vegetarian quinoa chili with sweet potatoes has mild spice from poblanos and green chiles. Chili powder, cumin and garlic provide classic chili flavor."
-                        data-img="../images/anti-inflammatory/meal06.png"
-                        data-alt="Quinoa Chili with Sweet Potatoes meal"
-                        data-nutrition="346 calories, 6g fat, 63g carbs, 12g protein"
-                        data-ingredients="
+          <!-- MEAL 06 -->
+          <div
+            class="meal anti-inflammatory"
+            data-name="Quinoa Chili with Sweet Potatoes"
+            data-description="This hearty vegetarian quinoa chili with sweet potatoes has mild spice from poblanos and green chiles. Chili powder, cumin and garlic provide classic chili flavor."
+            data-img="../images/anti-inflammatory/meal06.png"
+            data-alt="Quinoa Chili with Sweet Potatoes meal"
+            data-nutrition="346 calories, 6g fat, 63g carbs, 12g protein"
+            data-ingredients="
                             1 tablespoon extra-virgin olive oil #br
                             2 (12 ounce) sweet potatoes, peeled and cut into 1/2-inch pieces #br
                             1 medium yellow onion, diced #br
@@ -261,7 +279,7 @@
                             ½ teaspoon salt #br
                             Sliced jalapeño peppers, yogurt and cilantro for serving
                         "
-                        data-instructions="
+            data-instructions="
                             Heat oil in a large pot over medium-high heat. 
                             Add sweet potatoes and cook, stirring occasionally, until slightly softened and 
                             lightly charred, 6 to 7 minutes. Add onion and poblanos; cook, stirring occasionally, 
@@ -272,18 +290,20 @@
                             Stir in quinoa, beans and salt. Reduce heat to medium, cover and simmer, stirring occasionally, 
                             until the quinoa is tender, about 15 minutes, adding the remaining 1 cup water during 
                             the last 3 minutes of cook time. Garnish with jalapeño slices, yogurt and cilantro, if desired.                       
-                        ">
-                        &nbsp;
-                    </div> 
+                        "
+          >
+            &nbsp;
+          </div>
 
-                    <!-- MEAL 07 -->
-                    <div class="meal anti-inflammatory"
-                        data-name="Salt & Vinegar Sheet-Pan Chicken & Brussels Sprouts"
-                        data-description="A strong vinegar, like malt or sherry, gives this baked chicken recipe a pucker factor reminiscent of salt-and-vinegar chips. Everything cooks on one pan, making this chicken sheet-pan dinner perfect for weeknights when you want big results for little effort (so, pretty much every weeknight!)."
-                        data-img="../images/anti-inflammatory/meal07.png"
-                        data-alt="Salt & Vinegar Sheet-Pan Chicken & Brussels Sprouts meal"
-                        data-nutrition="387 calories, 19g fat, 20g carbs, 36g protein"
-                        data-ingredients="
+          <!-- MEAL 07 -->
+          <div
+            class="meal anti-inflammatory"
+            data-name="Salt & Vinegar Sheet-Pan Chicken & Brussels Sprouts"
+            data-description="A strong vinegar, like malt or sherry, gives this baked chicken recipe a pucker factor reminiscent of salt-and-vinegar chips. Everything cooks on one pan, making this chicken sheet-pan dinner perfect for weeknights when you want big results for little effort (so, pretty much every weeknight!)."
+            data-img="../images/anti-inflammatory/meal07.png"
+            data-alt="Salt & Vinegar Sheet-Pan Chicken & Brussels Sprouts meal"
+            data-nutrition="387 calories, 19g fat, 20g carbs, 36g protein"
+            data-ingredients="
                             1 ½ pounds bone-in, skin-on chicken breasts #br
                             3 tablespoons extra-virgin olive oil, divided #br
                             1 teaspoon kosher salt, divided #br
@@ -296,7 +316,7 @@
                             ½ teaspoon onion powder #br
                             ¼ teaspoon sugar
                         "
-                        data-instructions="
+            data-instructions="
                             Preheat oven to 450 degrees F.
                             #br
                             Cut chicken breasts into 4 equal portions. Brush with 1 tablespoon oil and 
@@ -314,18 +334,20 @@
                             Drizzle the vinegar mixture over the chicken and vegetables and roast for 5 minutes more. 
                             Transfer the chicken to a serving platter and stir the vegetables on the pan. 
                             Serve the vegetables with the chicken.                       
-                        ">
-                        &nbsp;
-                    </div> 
+                        "
+          >
+            &nbsp;
+          </div>
 
-                    <!-- MEAL 08 -->
-                    <div class="meal anti-inflammatory"
-                        data-name="Baked Eggs in Tomato Sauce with Kale"
-                        data-description="You can make these three-ingredient tomato-simmered eggs with things you probably already have on hand in your freezer and pantry. To make these baked eggs more like eggs in purgatory, look for a spicy tomato sauce and don't forget some whole-wheat bread for dipping."
-                        data-img="../images/anti-inflammatory/meal08.png"
-                        data-alt="Baked Eggs in Tomato Sauce with Kale meal"
-                        data-nutrition="344 calories, 20g fat, 21g carbs, 21g protein"
-                        data-ingredients="
+          <!-- MEAL 08 -->
+          <div
+            class="meal anti-inflammatory"
+            data-name="Baked Eggs in Tomato Sauce with Kale"
+            data-description="You can make these three-ingredient tomato-simmered eggs with things you probably already have on hand in your freezer and pantry. To make these baked eggs more like eggs in purgatory, look for a spicy tomato sauce and don't forget some whole-wheat bread for dipping."
+            data-img="../images/anti-inflammatory/meal08.png"
+            data-alt="Baked Eggs in Tomato Sauce with Kale meal"
+            data-nutrition="344 calories, 20g fat, 21g carbs, 21g protein"
+            data-ingredients="
                             1 tablespoon extra-virgin olive oil #br
                             3 10-ounce packages frozen chopped kale, thawed, drained and squeezed dry (9 cups) #br
                             ½ teaspoon salt, divided #br
@@ -333,7 +355,7 @@
                             1 25-ounce jar low-sodium marinara sauce or 3 cups canned low-sodium tomato sauce #br
                             8 large eggs
                         "
-                        data-instructions="
+            data-instructions="
                             Preheat oven to 350 degrees F.
                             #br
                             Heat oil in a 10-inch cast-iron skillet or nonstick ovenproof skillet over medium heat. 
@@ -345,20 +367,22 @@
                             #br
                             Transfer the pan to the oven and bake until the egg whites are set and the yolks are still soft, 
                             about 20 minutes.                       
-                        ">
-                        &nbsp;
-                    </div>                        
+                        "
+          >
+            &nbsp;
+          </div>
 
-                    <!--========== GLUTEN-FREE DIET ==========-->
+          <!--========== GLUTEN-FREE DIET ==========-->
 
-                    <!-- MEAL 01 -->
-                    <div class="meal gluten-free"
-                        data-name="Creamy White Chili with Cream Cheese"
-                        data-description="This rich yet healthy white chicken chili recipe comes together in a flash thanks to quick-cooking chicken thighs and canned white beans."
-                        data-img="../images/gluten-free/meal01.png"
-                        data-alt="Creamy White Chili with Cream Cheese meal"
-                        data-nutrition="313 calories, 12g fat, 25g carbs, 28g protein"
-                        data-ingredients="
+          <!-- MEAL 01 -->
+          <div
+            class="meal gluten-free"
+            data-name="Creamy White Chili with Cream Cheese"
+            data-description="This rich yet healthy white chicken chili recipe comes together in a flash thanks to quick-cooking chicken thighs and canned white beans."
+            data-img="../images/gluten-free/meal01.png"
+            data-alt="Creamy White Chili with Cream Cheese meal"
+            data-nutrition="313 calories, 12g fat, 25g carbs, 28g protein"
+            data-ingredients="
                             2 (15-ounce) cans no-salt-added great northern beans, rinsed, divided #br
                             1 tablespoon neutral oil, such as canola or avocado #br
                             1 pound boneless, skinless chicken thighs, trimmed and cut into bite-size pieces #br
@@ -372,7 +396,7 @@
                             1 tablespoon lime juice #br
                             ½ cup loosely packed fresh cilantro leaves                            
                         "
-                        data-instructions="
+            data-instructions="
                             Place half of the rinsed beans in a small bowl; using a whisk or potato masher, mash until smooth.
                             #br
                             Heat 1 tablespoon oil in a large heavy pot over high heat. 
@@ -385,18 +409,20 @@
                             Reduce heat to medium and simmer until the chicken is cooked through, about 3 minutes. 
                             Remove from heat; add 4 ounces cream cheese and 1 tablespoon lime juice; stir until 
                             the cream cheese is melted. Serve topped with ½ cup cilantro.
-                        ">
-                        &nbsp;
-                    </div>
+                        "
+          >
+            &nbsp;
+          </div>
 
-                    <!-- MEAL 02 -->
-                    <div class="meal gluten-free"
-                        data-name="Chhole (Chickpea Curry)"
-                        data-description="This healthy Indian recipe is a flavorful chickpea curry that you can make in just 20 minutes. Also called chana masala, this dish is a comforting and delicious dinner."
-                        data-img="../images/gluten-free/meal02.png"
-                        data-alt="Chhole (Chickpea Curry) meal"
-                        data-nutrition="278 calories, 16g fat, 30g carbs, 6g protein"
-                        data-ingredients="
+          <!-- MEAL 02 -->
+          <div
+            class="meal gluten-free"
+            data-name="Chhole (Chickpea Curry)"
+            data-description="This healthy Indian recipe is a flavorful chickpea curry that you can make in just 20 minutes. Also called chana masala, this dish is a comforting and delicious dinner."
+            data-img="../images/gluten-free/meal02.png"
+            data-alt="Chhole (Chickpea Curry) meal"
+            data-nutrition="278 calories, 16g fat, 30g carbs, 6g protein"
+            data-ingredients="
                             1 medium serrano pepper, cut into thirds #br
                             4 large cloves garlic #br
                             1 (2-inch) piece fresh ginger, peeled and coarsely chopped #br
@@ -411,7 +437,7 @@
                             2 teaspoons garam masala #br
                             ¼ cup fresh cilantro for garnish                            
                         "
-                        data-instructions="
+            data-instructions="
                             Pulse serrano, 4 cloves garlic and ginger in a food processor until minced. 
                             Scrape down the sides and pulse again. Add onion; pulse until finely chopped, but not watery.
                             #br
@@ -424,18 +450,20 @@
                             Reduce heat to maintain a simmer and cook, stirring occasionally, for 4 minutes. 
                             Add 30 ounces chickpeas and 2 teaspoons garam masala, reduce heat to a gentle simmer, cover and 
                             cook, stirring occasionally, for 5 minutes more. Serve topped with ¼ cup cilantro, if desired.
-                        ">
-                        &nbsp;
-                    </div>
+                        "
+          >
+            &nbsp;
+          </div>
 
-                    <!-- MEAL 03 -->
-                    <div class="meal gluten-free"
-                        data-name="Chipotle Chicken Quinoa Burrito Bowl"
-                        data-description="This flavorful burrito bowl features grilled chicken coated in a spicy chipotle glaze. Loading it with vegetables and using quinoa in place of rice adds nutrition for a healthier dinner."
-                        data-img="../images/gluten-free/meal03.png"
-                        data-alt="Chipotle Chicken Quinoa Burrito Bowl meal"
-                        data-nutrition="452 calories, 19g fat, 36g carbs, 36g protein"
-                        data-ingredients="
+          <!-- MEAL 03 -->
+          <div
+            class="meal gluten-free"
+            data-name="Chipotle Chicken Quinoa Burrito Bowl"
+            data-description="This flavorful burrito bowl features grilled chicken coated in a spicy chipotle glaze. Loading it with vegetables and using quinoa in place of rice adds nutrition for a healthier dinner."
+            data-img="../images/gluten-free/meal03.png"
+            data-alt="Chipotle Chicken Quinoa Burrito Bowl meal"
+            data-nutrition="452 calories, 19g fat, 36g carbs, 36g protein"
+            data-ingredients="
                             1 tablespoon finely chopped chipotle peppers in adobo sauce #br
                             1 tablespoon extra-virgin olive oil #br
                             ½ teaspoon garlic powder #br
@@ -450,7 +478,7 @@
                             ¼ cup shredded Cheddar or Monterey Jack cheese #br
                             Lime wedges for serving                            
                         "
-                        data-instructions="
+            data-instructions="
                             Preheat grill to medium-high or preheat broiler.
                             #br
                             Combine chipotles, oil, garlic powder and cumin in a small bowl.
@@ -465,18 +493,20 @@
                             Assemble each burrito bowl with 1/2 cup quinoa, 1/2 cup chicken, 1/2 cup lettuce, 
                             1/4 cup beans, 1/4 avocado, 1 tablespoon pico de gallo (or other salsa) and 1 tablespoon cheese. 
                             Serve with a lime wedge.
-                        ">
-                        &nbsp;
-                    </div>
+                        "
+          >
+            &nbsp;
+          </div>
 
-                    <!-- MEAL 04 -->
-                    <div class="meal gluten-free"
-                        data-name="Smoky Collards & Shrimp with Cheesy Grits"
-                        data-description="Be sure to slice the collards extra thin; it will help expedite the cooking process and produce the most tender greens."
-                        data-img="../images/gluten-free/meal04.png"
-                        data-alt="Smoky Collards & Shrimp with Cheesy Grits meal"
-                        data-nutrition="443 calories, 13g fat, 47g carbs, 38g protein"
-                        data-ingredients="
+          <!-- MEAL 04 -->
+          <div
+            class="meal gluten-free"
+            data-name="Smoky Collards & Shrimp with Cheesy Grits"
+            data-description="Be sure to slice the collards extra thin; it will help expedite the cooking process and produce the most tender greens."
+            data-img="../images/gluten-free/meal04.png"
+            data-alt="Smoky Collards & Shrimp with Cheesy Grits meal"
+            data-nutrition="443 calories, 13g fat, 47g carbs, 38g protein"
+            data-ingredients="
                             3 cups water #br
                             ¾ cup whole milk #br
                             ¾ cup grits or polenta #br
@@ -491,7 +521,7 @@
                             2 pounds collards, stemmed and thinly sliced #br
                             1 pound raw shrimp (31-35 count), peeled and deveined                            
                         "
-                        data-instructions="
+            data-instructions="
                             Combine water and milk in a large saucepan; bring to a boil. Whisk in grits (or polenta) until smooth. 
                             Cover and reduce heat to low. Cook, whisking occasionally, until creamy and thickened, about 25 minutes. Remove from heat.
                             #br                            
@@ -505,18 +535,20 @@
                             stirring occasionally, until they turn pink, 3 to 4 minutes.
                             #br
                             Serve the shrimp and collards with the grits.
-                        ">
-                        &nbsp;
-                    </div>
+                        "
+          >
+            &nbsp;
+          </div>
 
-                    <!-- MEAL 05 -->
-                    <div class="meal gluten-free"
-                        data-name="Chicken Hummus Bowls"
-                        data-description="The spiced chicken atop these bowls is ready fast with the help of the broiler. Serve with warm whole-wheat pita for scooping up extra hummus at the bottom of the bowl."
-                        data-img="../images/gluten-free/meal05.png"
-                        data-alt="Chicken Hummus Bowls meal"
-                        data-nutrition="485 calories, 29g fat, 27g carbs, 31g protein"
-                        data-ingredients="
+          <!-- MEAL 05 -->
+          <div
+            class="meal gluten-free"
+            data-name="Chicken Hummus Bowls"
+            data-description="The spiced chicken atop these bowls is ready fast with the help of the broiler. Serve with warm whole-wheat pita for scooping up extra hummus at the bottom of the bowl."
+            data-img="../images/gluten-free/meal05.png"
+            data-alt="Chicken Hummus Bowls meal"
+            data-nutrition="485 calories, 29g fat, 27g carbs, 31g protein"
+            data-ingredients="
                             1 pound boneless, skinless chicken thighs, trimmed and cut into 1-inch pieces #br
                             3 tablespoons extra-virgin olive oil, divided #br
                             1 teaspoon ground cumin #br
@@ -531,7 +563,7 @@
                             ¼ cup slivered red onion #br
                             ¼ cup chopped fresh parsley                            
                         "
-                        data-instructions="
+            data-instructions="
                             Position rack in upper third of oven; preheat broiler to high. Line a rimmed baking sheet with foil.
                             #br
                             Toss chicken with 1 tablespoon oil, cumin, paprika, cayenne and 1/8 teaspoon salt. 
@@ -543,20 +575,22 @@
                             #br
                             Divide hummus among 4 shallow bowls or plates. Top with the chicken and any remaining dressing, 
                             cucumber, tomatoes, onion and parsley.                            
-                        ">
-                        &nbsp;
-                    </div>
+                        "
+          >
+            &nbsp;
+          </div>
 
-                    <!--========== VEGAN DIET ==========-->
+          <!--========== VEGAN DIET ==========-->
 
-                    <!-- MEAL 01 -->
-                    <div class="meal vegan"
-                        data-name="White Bean & Veggie Salad"
-                        data-description="This meatless main-dish salad combines creamy, satisfying white beans and avocado. Try mixing it up with different seasonal vegetables."
-                        data-img="../images/vegan/meal01.png"
-                        data-alt="White Bean & Veggie Salad meal"
-                        data-nutrition="360 calories, 25g fat, 30g carbs, 10g protein"
-                        data-ingredients="
+          <!-- MEAL 01 -->
+          <div
+            class="meal vegan"
+            data-name="White Bean & Veggie Salad"
+            data-description="This meatless main-dish salad combines creamy, satisfying white beans and avocado. Try mixing it up with different seasonal vegetables."
+            data-img="../images/vegan/meal01.png"
+            data-alt="White Bean & Veggie Salad meal"
+            data-nutrition="360 calories, 25g fat, 30g carbs, 10g protein"
+            data-ingredients="
                             2 cups mixed salad greens #br
                             ¾ cup veggies of your choice, such as chopped cucumbers and cherry tomatoes #br
                             ⅓ cup canned white beans, rinsed and drained #br
@@ -566,24 +600,26 @@
                             ¼ teaspoon kosher salt #br
                             Freshly ground pepper to taste                            
                         "
-                        data-instructions="
+            data-instructions="
                             Combine greens, veggies, beans and avocado in a medium bowl. 
                             #br
                             Drizzle with vinegar and oil and season with salt and pepper. 
                             #br
                             Toss to combine and transfer to a large plate.                            
-                        ">
-                        &nbsp;
-                    </div>
+                        "
+          >
+            &nbsp;
+          </div>
 
-                    <!-- MEAL 02 -->
-                    <div class="meal vegan"
-                        data-name="Grilled Cauliflower Steaks with Almond Pesto & Butter Beans"
-                        data-description="Need some new meatless dinner ideas? This vegan recipe for grilled cauliflower steaks with buttery (but butter-free!) butter beans and almond pesto comes together in just 25 minutes but is impressive enough to serve to guests. We're sorry to ask you to buy 2 heads of cauliflower to make this recipe when you only cut a couple of 'steaks' from each, but it guarantees the best results."
-                        data-img="../images/vegan/meal02.png"
-                        data-alt="Grilled Cauliflower Steaks with Almond Pesto & Butter Beans meal"
-                        data-nutrition="427 calories, 27g fat, 36g carbs, 14g protein"
-                        data-ingredients="
+          <!-- MEAL 02 -->
+          <div
+            class="meal vegan"
+            data-name="Grilled Cauliflower Steaks with Almond Pesto & Butter Beans"
+            data-description="Need some new meatless dinner ideas? This vegan recipe for grilled cauliflower steaks with buttery (but butter-free!) butter beans and almond pesto comes together in just 25 minutes but is impressive enough to serve to guests. We're sorry to ask you to buy 2 heads of cauliflower to make this recipe when you only cut a couple of 'steaks' from each, but it guarantees the best results."
+            data-img="../images/vegan/meal02.png"
+            data-alt="Grilled Cauliflower Steaks with Almond Pesto & Butter Beans meal"
+            data-nutrition="427 calories, 27g fat, 36g carbs, 14g protein"
+            data-ingredients="
                             ½ cup almonds #br
                             5 tablespoons chopped flat-leaf parsley, divided, plus more for garnish #br
                             ¼ cup packed fresh basil, plus more for garnish #br
@@ -601,7 +637,7 @@
                             ¼ teaspoon ground pepper #br
                             2 teaspoons sherry vinegar                           
                         "
-                        data-instructions="
+            data-instructions="
                             Preheat grill to medium.
                             #br
                             Pulse almonds, 4 tablespoons parsley, basil, chives, lemon zest and juice, 2 tablespoons oil and 
@@ -621,18 +657,20 @@
                             until hot, about 5 minutes. Remove from heat and stir in vinegar and the remaining 1 tablespoon parsley.
                             #br
                             Serve the cauliflower steaks over the beans, topped with the pesto and more herbs, if desired.                         
-                        ">
-                        &nbsp;
-                    </div>
+                        "
+          >
+            &nbsp;
+          </div>
 
-                    <!-- MEAL 03 -->
-                    <div class="meal vegan"
-                        data-name="Tofu Poke"
-                        data-description="This fast vegan version of poke (the traditional Hawaiian salad of diced raw fish tossed in a soy-sesame sauce) swaps in extra-firm tofu for fish while loading your bowl with vegetables and crunchy toppers like pea shoots and peanuts. Serve over brown rice instead of the zucchini noodles to add a hearty boost of fiber."
-                        data-img="../images/vegan/meal03.png"
-                        data-alt="Tofu Poke meal"
-                        data-nutrition="262 calories, 16g fat, 19g carbs, 16g protein"
-                        data-ingredients="
+          <!-- MEAL 03 -->
+          <div
+            class="meal vegan"
+            data-name="Tofu Poke"
+            data-description="This fast vegan version of poke (the traditional Hawaiian salad of diced raw fish tossed in a soy-sesame sauce) swaps in extra-firm tofu for fish while loading your bowl with vegetables and crunchy toppers like pea shoots and peanuts. Serve over brown rice instead of the zucchini noodles to add a hearty boost of fiber."
+            data-img="../images/vegan/meal03.png"
+            data-alt="Tofu Poke meal"
+            data-nutrition="262 calories, 16g fat, 19g carbs, 16g protein"
+            data-ingredients="
                             ¾ cup thinly sliced scallion greens #br
                             ¼ cup reduced-sodium tamari #br
                             1 ½ tablespoons mirin #br
@@ -648,7 +686,7 @@
                             ¼ cup toasted chopped peanuts #br
                             ¼ cup chopped fresh basil                           
                         "
-                        data-instructions="
+            data-instructions="
                             Whisk scallion greens, tamari, mirin, oil, sesame seeds, ginger and crushed red pepper, 
                             if using, in a medium bowl. Set aside 2 tablespoons of the sauce in a small bowl. 
                             Add tofu to the sauce in the medium bowl and gently toss to coat.
@@ -656,20 +694,22 @@
                             Combine zucchini noodles and vinegar in a large bowl. 
                             Divide among 4 bowls and top each with 3/4 cup tofu, 1/2 cup each carrots and pea shoots, and 
                             1 tablespoon each peanuts and basil. Drizzle with the reserved sauce and serve.                           
-                        ">
-                        &nbsp;
-                    </div>
+                        "
+          >
+            &nbsp;
+          </div>
 
-                    <!--========== VEGETARIAN DIET ==========-->
+          <!--========== VEGETARIAN DIET ==========-->
 
-                    <!-- MEAL 01 -->
-                    <div class="meal vegetarian"
-                        data-name="Chickpea Pasta with Mushrooms & Kale"
-                        data-description="Loading up your pasta with vegetables like the kale and mushrooms used here is not only delicious, it also makes the meal more satisfying."
-                        data-img="../images/vegetarian/meal01.png"
-                        data-alt="Chickpea Pasta with Mushrooms & Kale meal"
-                        data-nutrition="340 calories, 18g fat, 38g carbs, 17g protein"
-                        data-ingredients="
+          <!-- MEAL 01 -->
+          <div
+            class="meal vegetarian"
+            data-name="Chickpea Pasta with Mushrooms & Kale"
+            data-description="Loading up your pasta with vegetables like the kale and mushrooms used here is not only delicious, it also makes the meal more satisfying."
+            data-img="../images/vegetarian/meal01.png"
+            data-alt="Chickpea Pasta with Mushrooms & Kale meal"
+            data-nutrition="340 calories, 18g fat, 38g carbs, 17g protein"
+            data-ingredients="
                             8 ounces chickpea rotini or penne (see Tip) #br
                             ¼ cup extra-virgin olive oil #br
                             2 large cloves garlic, sliced #br
@@ -680,7 +720,7 @@
                             ½ teaspoon salt #br
                             Grated Parmesan cheese for serving (optional)                            
                         "
-                        data-instructions="
+            data-instructions="
                             Cook pasta according to package directions. Reserve 1 cup of the cooking water, then drain.
                             #br
                             Meanwhile, heat oil in a large skillet over medium heat. 
@@ -690,18 +730,20 @@
                             #br
                             Stir in the pasta and enough of the reserved water to coat; cook, stirring, until combined and hot, 
                             about 1 minute more. Serve topped with Parmesan, if desired.                            
-                        ">
-                        &nbsp;
-                    </div>
+                        "
+          >
+            &nbsp;
+          </div>
 
-                    <!-- MEAL 02 -->
-                    <div class="meal vegetarian"
-                        data-name="Red Lentil Soup with Saffron"
-                        data-description="This hearty red lentil soup uses spices common in Persian cuisine: turmeric, cumin and saffron. Enjoy it with a warm baguette or steamed rice."
-                        data-img="../images/vegetarian/meal02.png"
-                        data-alt="Red Lentil Soup with Saffron meal"
-                        data-nutrition="280 calories, 7g fat, 42g carbs, 15g protein"
-                        data-ingredients="
+          <!-- MEAL 02 -->
+          <div
+            class="meal vegetarian"
+            data-name="Red Lentil Soup with Saffron"
+            data-description="This hearty red lentil soup uses spices common in Persian cuisine: turmeric, cumin and saffron. Enjoy it with a warm baguette or steamed rice."
+            data-img="../images/vegetarian/meal02.png"
+            data-alt="Red Lentil Soup with Saffron meal"
+            data-nutrition="280 calories, 7g fat, 42g carbs, 15g protein"
+            data-ingredients="
                             3 tablespoons extra-virgin olive oil #br
                             2 medium carrots, finely diced #br
                             2 stalks celery, finely diced #br
@@ -719,7 +761,7 @@
                             1 teaspoon ground pepper #br
                             Plain yogurt & chopped fresh mint for garnish                           
                         "
-                        data-instructions="
+            data-instructions="
                             Heat oil in a large heavy pot over medium heat. 
                             Add carrots, celery and onion and cook until starting to soften, 7 to 10 minutes. 
                             (Do not brown.) Stir in garlic, tomato paste, cumin, saffron and turmeric and cook for 1 minute.
@@ -729,66 +771,81 @@
                             until the lentils and vegetables are tender, 15 to 20 minutes. Add more water if desired.
                             #br
                             Garnish with yogurt and mint, if desired.                            
-                        ">
-                        &nbsp;
-                    </div>
+                        "
+          >
+            &nbsp;
+          </div>
+        </div>
 
-                </div>
-
-                <!-- MODAL view -->
-                <div id="meal-modal" class="modal">
-                    <div class="modal__content">
-                        <span class="close">&times;</span>
-                        <div>
-                            <img id="modal__img" src="" alt="">
-                        </div>
-                        <div id="modal__data">
-                            <p id="modal__title">&nbsp;</p>
-                            <p id="modal__nutri-info">&nbsp;</p>
-                            <p id="modal__description">&nbsp;</p>
-                        </div>
-
-                        <button id="view-more-button">View More</button>
-
-                        <!-- MORE INFO -->
-                        <div id="more-info" class="collapse">
-                            <p class="heading-tertiary">Ingredients:</p>
-                            <ul id="modal__ingredients"></ul>
-                            <p class="heading-tertiary">Instructions:</p>
-                            <ol id="modal__instructions"></ol>
-
-                            <button id="view-less-button">View Less</button>
-                        </div>
-
-                    </div>
-                </div>
-
-            </section>
-        </main>
-
-        <footer class="footer">
-            <div class="footer__container">
-                <div class="footer__logo-container">
-                    <img src="images/logo.png" alt="EatWell Logo" class="logo footer__logo"/>
-                </div>
-                <address class="contacts">
-                    <p>STI Academic Center, Quezon Avenue corner<br> Perez Street, Lucena City, 4301 Quezon</p>
-
-                    <p>
-                        <a class="footer__link" href="tel:415-201-6370">09975934911</a> <br>
-                        <a class="footer__link" href="mailto:hello@omnifood.com">testEmail@gmail.com</a>
-                    </p>
-                </address>
+        <!-- MODAL view -->
+        <div id="meal-modal" class="modal">
+          <div class="modal__content">
+            <span class="close">&times;</span>
+            <div>
+              <img id="modal__img" src="" alt="" />
+            </div>
+            <div id="modal__data">
+              <p id="modal__title">&nbsp;</p>
+              <p id="modal__nutri-info">&nbsp;</p>
+              <p id="modal__description">&nbsp;</p>
             </div>
 
-            <p class="copyright">&copy; 2025 EatWell Daily. All rights reserved.</p>
-        </footer>
+            <button id="view-more-button">View More</button>
 
-        <!-- Link Ionicons -->
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-        <!-- Link Javascript files -->
-        <script src="js/meals.js"></script>
-        <script src="js/navigation.js"></script>
-    </body>
+            <!-- MORE INFO -->
+            <div id="more-info" class="collapse">
+              <p class="heading-tertiary">Ingredients:</p>
+              <ul id="modal__ingredients"></ul>
+              <p class="heading-tertiary">Instructions:</p>
+              <ol id="modal__instructions"></ol>
+
+              <button id="view-less-button">View Less</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__logo-container">
+          <img
+            src="images/logo.png"
+            alt="EatWell Logo"
+            class="logo footer__logo"
+          />
+        </div>
+        <address class="contacts">
+          <p>
+            STI Academic Center, Quezon Avenue corner<br />
+            Perez Street, Lucena City, 4301 Quezon
+          </p>
+
+          <p>
+            <a class="footer__link" href="tel:415-201-6370">09975934911</a>
+            <br />
+            <a class="footer__link" href="mailto:hello@omnifood.com"
+              >testEmail@gmail.com</a
+            >
+          </p>
+        </address>
+      </div>
+
+      <p class="copyright">&copy; 2025 EatWell Daily. All rights reserved.</p>
+    </footer>
+
+    <!-- Link Ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- Link Scripts -->
+    <script src="/scripts/meals.js"></script>
+    <script src="/scripts/navigation.js"></script>
+  </body>
 </html>
