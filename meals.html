@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EatWell Daily</title>
 
     <!-- Link Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,34 +12,25 @@
       rel="stylesheet"
     />
 
+    <!-- Link Ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
     <!-- Link Styles -->
     <link rel="stylesheet" href="/styles/main.css" />
     <link rel="stylesheet" href="/styles//general.css" />
     <link rel="stylesheet" href="/styles//queries.css" />
+
+    <title>EatWell Daily</title>
   </head>
   <body>
-    <header class="header">
-      <div class="header__container">
-        <div>
-          <img src="images/logo.png" alt="EatWell Logo" class="logo" />
-        </div>
-
-        <nav class="nav">
-          <ul class="nav__list">
-            <li><a href="index.html" class="nav__link link-home">Home</a></li>
-            <li><a href="meals.html" class="nav__link link-meals">Meals</a></li>
-            <li>
-              <a href="contact.html" class="nav__link link-contact">Contact</a>
-            </li>
-          </ul>
-        </nav>
-
-        <button class="button-mobile-nav">
-          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
-        </button>
-      </div>
-    </header>
+    <primary-header></primary-header>
 
     <main>
       <section class="meals">
@@ -834,18 +824,8 @@
       <p class="copyright">&copy; 2025 EatWell Daily. All rights reserved.</p>
     </footer>
 
-    <!-- Link Ionicons -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-
     <!-- Link Scripts -->
     <script src="/scripts/meals.js"></script>
-    <script src="/scripts/navigation.js"></script>
+    <script type="module" src="/scripts/navigation.js"></script>
   </body>
 </html>

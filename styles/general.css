@@ -65,10 +65,8 @@
 /********************************/
 /* NAVIGATION */
 /********************************/
-.header {
-  background-color: var(--primary-color);
-}
 .header__container {
+  background-color: var(--primary-color);
   height: 8rem;
   margin: 0 auto;
   display: flex;
@@ -96,7 +94,7 @@
 .nav__link::after {
   content: "";
   position: absolute;
-  width: 0%;
+  width: 0;
   height: 2px;
   background-color: #edf3ed;
   left: 50%;
