@@ -10,11 +10,11 @@ class PrimaryHeader extends HTMLElement {
         <nav class="nav">
           <ul class="nav__list">
             <li>
-              <a href="index.html" class="nav__link link-home">Home</a>
+              <a href="index.html" class="nav__link active">Home</a>
             </li>
-            <li><a href="meals.html" class="nav__link link-meals">Meals</a></li>
+            <li><a href="meals.html" class="nav__link">Meals</a></li>
             <li>
-              <a href="contact.html" class="nav__link link-contact">Contact</a>
+              <a href="contact.html" class="nav__link">Contact</a>
             </li>
           </ul>
         </nav>
